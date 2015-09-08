@@ -1,0 +1,7 @@
+1.5  - Release Candidate
+1.5  - Release Candidate
+1.7  - Release update
+1.8  - CHEF-108 removed freeMethodWeight from request
+1.9  - SHIPPERHQ-602 - altered credentials sent in request
+1.10  - SHIPPERHQ-777 - updated development environment scope name
+1.11  - SHIPPERHQ-290 - removed Destination Type from address in request
