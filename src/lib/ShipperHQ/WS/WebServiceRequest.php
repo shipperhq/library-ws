@@ -1,6 +1,6 @@
 <?php
 
-namespace ShipperHQ\WS\Request;
+namespace ShipperHQ\WS;
 
 /**
  * Interface WebServiceRequest
@@ -12,9 +12,9 @@ interface WebServiceRequest
 
    function getCredentials();
 
-   function setCredentials(\ShipperHQ\User\Credentials $credentials);
+   function setCredentials(\ShipperHQ\WS\Shared\Credentials $credentials);
 
    function getSiteDetails();
 
-   function setSiteDetails(\ShipperHQ\User\SiteDetails $siteDetails);
+   function setSiteDetails(\ShipperHQ\WS\Shared\SiteDetails $siteDetails);
 }

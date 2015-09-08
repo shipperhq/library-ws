@@ -1,6 +1,6 @@
 <?php
 
-namespace ShipperHQ\WS\Response;
+namespace ShipperHQ\WS;
 
 /**
  * Interface WebServiceResponse
@@ -12,5 +12,5 @@ interface WebServiceResponse
    function getErrors();
    function setErrors(array $errors);
    function getResponseSummary();
-   function setResponseSummary(\ShipperHQ\WS\Response\ResponseSummary $responseSummary);
+   function setResponseSummary(\ShipperHQ\WS\Rate\Response\ResponseSummary $responseSummary);
 }

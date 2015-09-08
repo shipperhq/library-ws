@@ -1,7 +1,8 @@
 <?php
 
-namespace ShipperHQ\WS\Request\Rate;
-use ShipperHQ\Shipping\Address;
+namespace ShipperHQ\WS\Rate\Request;
+
+use ShipperHQ\WS\Shared\Address;
 
 include_once 'ShipperHQ/WS/Request/AbstractWebServiceRequest.php';
 include_once 'ShipperHQ/WS/Request/WebServiceRequest.php';

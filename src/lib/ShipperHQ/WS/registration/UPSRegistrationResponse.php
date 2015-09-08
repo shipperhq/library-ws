@@ -1,6 +1,6 @@
 <?php
 
-namespace ShipperHQ\WS\Response\UPS\Registration;
+namespace ShipperHQ\WS\Registration;
 
 /**
  * Class UPSRegistrationResponse

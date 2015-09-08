@@ -1,15 +1,15 @@
 <?php
 
-namespace ShipperHQ\WS\Request;
+namespace ShipperHQ\WS;
 
-include_once 'ShipperHQ/WS/Request/WebServiceRequest.php';
+use \ShipperHQ\WS\Request\WebServiceRequest;
 
 /**
  * Class AbstractWebServiceRequest
  *
  * @package ShipperHQ\WS\Request
  */
-abstract class AbstractWebServiceRequest implements \ShipperHQ\WS\Request\WebServiceRequest
+abstract class AbstractWebServiceRequest implements WebServiceRequest
 {
 
    public $credentials;
@@ -24,9 +24,9 @@ abstract class AbstractWebServiceRequest implements \ShipperHQ\WS\Request\WebSer
    }
 
    /**
-    * @param \ShipperHQ\User\Credentials $credentials
+    * @param \ShipperHQ\WS\Shared\Credentials $credentials
     */
-   function setCredentials(\ShipperHQ\User\Credentials $credentials)
+   function setCredentials(\ShipperHQ\WS\Shared\Credentials $credentials)
    {
       $this->credentials = $credentials;
    }
@@ -40,9 +40,9 @@ abstract class AbstractWebServiceRequest implements \ShipperHQ\WS\Request\WebSer
    }
 
    /**
-    * @param \ShipperHQ\User\SiteDetails $siteDetails
+    * @param \ShipperHQ\WS\Shared\SiteDetails $siteDetails
     */
-   function setSiteDetails(\ShipperHQ\User\SiteDetails $siteDetails)
+   function setSiteDetails(\ShipperHQ\WS\Shared\SiteDetails $siteDetails)
    {
       $this->siteDetails = $siteDetails;
    }

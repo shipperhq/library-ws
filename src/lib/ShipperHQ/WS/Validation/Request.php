@@ -1,7 +1,8 @@
 <?php
 
-namespace ShipperHQ\WS\Request\Validation;
-use ShipperHQ\Validation\Address;
+namespace ShipperHQ\WS\Validation;
+
+use ShipperHQ\WS\Validation\Address;
 
 include_once 'ShipperHQ/WS/Request/AbstractWebServiceRequest.php';
 include_once 'ShipperHQ/WS/Request/WebServiceRequest.php';
@@ -21,7 +22,7 @@ class Request extends \ShipperHQ\WS\Request\AbstractWebServiceRequest implements
      * @param Address $destination
      * @param Address $origin
      */
-    function __construct(\ShipperHQ\Validation\Address $address = null)
+    function __construct(Address $address = null)
     {
         $this->address = $address;
     }

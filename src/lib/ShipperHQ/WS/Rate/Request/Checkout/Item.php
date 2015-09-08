@@ -28,7 +28,7 @@
  * @author ShipperHQ Team sales@shipperhq.com
  */
 
-namespace ShipperHQ\Checkout;
+namespace ShipperHQ\WS\Rate\Request\Checkout;
 
 /**
  * Class Item

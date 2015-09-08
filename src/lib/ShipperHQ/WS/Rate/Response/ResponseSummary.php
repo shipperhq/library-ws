@@ -1,6 +1,6 @@
 <?php
 
-namespace ShipperHQ\WS\Response;
+namespace ShipperHQ\WS\Rate\Response;
 
 /**
  * Class ResponseSummary
