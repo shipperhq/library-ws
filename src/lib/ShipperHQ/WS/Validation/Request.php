@@ -4,15 +4,15 @@ namespace ShipperHQ\WS\Validation;
 
 use ShipperHQ\WS\Validation\Address;
 
-include_once 'ShipperHQ/WS/Request/AbstractWebServiceRequest.php';
-include_once 'ShipperHQ/WS/Request/WebServiceRequest.php';
+use \ShipperHQ\WS\AbstractWebServiceRequest;
+use \ShipperHQ\WS\WebServiceRequest;
 
 /**
  * Class RateRequest
  *
  * @package ShipperHQ\WS\Request\Rate
  */
-class Request extends \ShipperHQ\WS\Request\AbstractWebServiceRequest implements \ShipperHQ\WS\Request\WebServiceRequest
+class Request extends AbstractWebServiceRequest implements WebServiceRequest
 {
 
     public $address;
@@ -29,7 +29,7 @@ class Request extends \ShipperHQ\WS\Request\AbstractWebServiceRequest implements
 
 
     /**
-     * @param \ShipperHQ\Validation\Address $address
+     * @param Address $address
      */
     public function setAddress($address)
     {
@@ -37,7 +37,7 @@ class Request extends \ShipperHQ\WS\Request\AbstractWebServiceRequest implements
     }
 
     /**
-     * @return \ShipperHQ\Validation\Address
+     * @return Address
      */
     public function getAddress()
     {

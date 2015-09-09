@@ -2,12 +2,14 @@
 
 namespace ShipperHQ\WS\Registration;
 
+use \ShipperHQ\WS;
+
 /**
  * Class UPSRegistrationResponse
  *
  * @package ShipperHQ\WS\Response\UPS\Registration
  */
-class UPSRegistrationResponse extends \ShipperHQ\WS\Response\AbstractWebServiceResponse implements \ShipperHQ\WS\Response\WebServiceResponse
+class UPSRegistrationResponse extends AbstractWebServiceResponse implements WebServiceResponse
 {
 
 }

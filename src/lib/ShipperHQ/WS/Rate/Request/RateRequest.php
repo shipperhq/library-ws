@@ -2,10 +2,12 @@
 
 namespace ShipperHQ\WS\Rate\Request;
 
-use ShipperHQ\WS\Shared\Address;
+use \ShipperHQ\WS\Shared\Address;
 
-include_once 'ShipperHQ/WS/Request/AbstractWebServiceRequest.php';
-include_once 'ShipperHQ/WS/Request/WebServiceRequest.php';
+
+use \ShipperHQ\WS\Rate\Request;
+use \ShipperHQ\WS\AbstractWebServiceRequest;
+use \ShipperHQ\WS\WebServiceRequest;
 
 
 /**
@@ -13,7 +15,7 @@ include_once 'ShipperHQ/WS/Request/WebServiceRequest.php';
  *
  * @package ShipperHQ\WS\Request\Rate
  */
-class RateRequest extends \ShipperHQ\WS\Request\AbstractWebServiceRequest implements \ShipperHQ\WS\Request\WebServiceRequest
+class RateRequest extends AbstractWebServiceRequest implements WebServiceRequest
 {
 
    public $cart;
@@ -32,10 +34,10 @@ class RateRequest extends \ShipperHQ\WS\Request\AbstractWebServiceRequest implem
     * @param Address $destination
     * @param Address $origin
     */
-   function __construct($cart = null, \ShipperHQ\Shipping\Address $destination = null,
-                        \ShipperHQ\WS\Request\Rate\CustomerDetails $customerDetails = null,
+   function __construct($cart = null, Address $destination = null,
+                        CustomerDetails $customerDetails = null,
                         $cartType = "STD", $carrierId = null, $deliveryDateUTC = null, $deliveryDate = null,
-                        $carrierGroupId = null, \ShipperHQ\WS\Request\Rate\ShipDetails $shipDetails = null)
+                        $carrierGroupId = null, ShipDetails $shipDetails = null)
    {
       $this->cart = $cart;
       $this->destination = $destination;
@@ -83,7 +85,7 @@ class RateRequest extends \ShipperHQ\WS\Request\AbstractWebServiceRequest implem
    /**
     * @param Address $destination
     */
-   public function setDestination(\ShipperHQ\Shipping\Address $destination)
+   public function setDestination(Address $destination)
    {
       $this->destination = $destination;
    }
@@ -100,7 +102,7 @@ class RateRequest extends \ShipperHQ\WS\Request\AbstractWebServiceRequest implem
    /**
     * @param CustomerDetails $customerDetails
     */
-   public function setCustomerDetails(\ShipperHQ\WS\Request\Rate\CustomerDetails $customerDetails)
+   public function setCustomerDetails(CustomerDetails $customerDetails)
    {
       $this->customerDetails = $customerDetails;
    }
@@ -180,7 +182,7 @@ class RateRequest extends \ShipperHQ\WS\Request\AbstractWebServiceRequest implem
     /**
      * @param null $shipDetails
      */
-    public function setShipDetails(\ShipperHQ\WS\Request\Rate\ShipDetails $shipDetails)
+    public function setShipDetails(ShipDetails $shipDetails)
     {
         $this->shipDetails = $shipDetails;
     }

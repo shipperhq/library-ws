@@ -2,17 +2,15 @@
 
 namespace ShipperHQ\WS\Rate\Request;
 
-use ShipperHQ\WS\Shared\Address;
-
-include_once 'ShipperHQ/WS/Request/AbstractWebServiceRequest.php';
-include_once 'ShipperHQ/WS/Request/WebServiceRequest.php';
+use \ShipperHQ\WS\AbstractWebServiceRequest;
+use \ShipperHQ\WS\WebServiceRequest;
 
 /**
  * Class RateRequest
  *
  * @package ShipperHQ\WS\Request\Rate
  */
-class InfoRequest extends \ShipperHQ\WS\Request\AbstractWebServiceRequest implements \ShipperHQ\WS\Request\WebServiceRequest
+class InfoRequest extends AbstractWebServiceRequest implements WebServiceRequest
 {
    /* function __construct()
     {

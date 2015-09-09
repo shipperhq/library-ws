@@ -2,12 +2,14 @@
 
 namespace ShipperHQ\WS\Registration;
 
+use \ShipperHQ\WS\Shared;
+
 /**
  * Class UPSRegistrationRequest
  *
- * @package ShipperHQ\WS\Request\UPS\Registration
+ * @package ShipperHQ\WS\Registration
  */
-class UPSRegistrationRequest extends \ShipperHQ\WS\Request\AbstractWebServiceRequest implements \ShipperHQ\WS\Request\WebServiceRequest
+class UPSRegistrationRequest extends \ShipperHQ\WS\Rate\Request\AbstractWebServiceRequest implements \ShipperHQ\WS\Rate\Request\WebServiceRequest
 {
    public $proposedUserName;
    public $proposedPassWord;
@@ -20,7 +22,7 @@ class UPSRegistrationRequest extends \ShipperHQ\WS\Request\AbstractWebServiceReq
    public $email;
 
    /**
-    * @param \ShipperHQ\Shipping\Address $address
+    * @param \ShipperHQ\WS\Shared\Address $address
     * @param null $companyName
     * @param null $customerName
     * @param null $email
@@ -30,7 +32,7 @@ class UPSRegistrationRequest extends \ShipperHQ\WS\Request\AbstractWebServiceReq
     * @param null $proposedUserName
     * @param null $title
     */
-   function __construct(\ShipperHQ\Shipping\Address $address = null, $companyName = null, $customerName = null, $email = null,
+   function __construct(Address $address = null, $companyName = null, $customerName = null, $email = null,
                         $phoneExt = null, $phoneNumber = null, $proposedPassWord = null, $proposedUserName = null,
                         $title = null)
    {
@@ -46,9 +48,9 @@ class UPSRegistrationRequest extends \ShipperHQ\WS\Request\AbstractWebServiceReq
    }
 
    /**
-    * @param \ShipperHQ\Shipping\Address $address
+    * @param Address $address
     */
-   public function setAddress(\ShipperHQ\Shipping\Address $address)
+   public function setAddress(Address $address)
    {
       $this->address = $address;
    }

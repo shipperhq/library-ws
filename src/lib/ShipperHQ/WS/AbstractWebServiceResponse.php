@@ -2,12 +2,14 @@
 
 namespace ShipperHQ\WS;
 
+use \ShipperHQ\WS\Rate\Response;
+
 /**
  * Class AbstractWebServiceResponse
  *
  * @package ShipperHQ\WS\Response
  */
-abstract class AbstractWebServiceResponse implements \ShipperHQ\WS\Rate\Response\WebServiceResponse
+abstract class AbstractWebServiceResponse implements WebServiceResponse
 {
    public $errors = array();
    public $responseSummary;
@@ -16,7 +18,7 @@ abstract class AbstractWebServiceResponse implements \ShipperHQ\WS\Rate\Response
     * @param ResponseSummary $responseSummary
     * @param array $errors
     */
-   function __construct(\ShipperHQ\WS\Rate\Response\ResponseSummary $responseSummary = null, array $errors = array())
+   function __construct(ResponseSummary $responseSummary = null, array $errors = array())
    {
       $this->responseSummary = $responseSummary;
       $this->errors = $errors;
@@ -39,15 +41,15 @@ abstract class AbstractWebServiceResponse implements \ShipperHQ\WS\Rate\Response
    }
 
    /**
-    * @param \ShipperHQ\WS\Response\ResponseSummary $responseSummary
+    * @param ResponseSummary $responseSummary
     */
-   public function setResponseSummary(\ShipperHQ\WS\Rate\Response\ResponseSummary $responseSummary)
+   public function setResponseSummary(ResponseSummary $responseSummary)
    {
       $this->responseSummary = $responseSummary;
    }
 
    /**
-    * @return \ShipperHQ\WS\Response\ResponseSummary
+    * @return ResponseSummary
     */
    public function getResponseSummary()
    {

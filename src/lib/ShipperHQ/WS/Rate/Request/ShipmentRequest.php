@@ -2,10 +2,10 @@
 
 namespace ShipperHQ\WS\Rate\Request;
 
-use ShipperHQ\WS\Shared\Address;
+use \ShipperHQ\WS\Shared\Address;
 
-include_once 'ShipperHQ/WS/Request/AbstractWebServiceRequest.php';
-include_once 'ShipperHQ/WS/Request/WebServiceRequest.php';
+use \ShipperHQ\WS\AbstractWebServiceRequest;
+use \ShipperHQ\WS\WebServiceRequest;
 
 
 /**
@@ -13,7 +13,7 @@ include_once 'ShipperHQ/WS/Request/WebServiceRequest.php';
  *
  * @package ShipperHQ\WS\Request\Rate
  */
-class ShipmentRequest extends \ShipperHQ\WS\Request\AbstractWebServiceRequest implements \ShipperHQ\WS\Request\WebServiceRequest
+class ShipmentRequest extends AbstractWebServiceRequest implements WebServiceRequest
 {
     public $carrierCode;
     public $orderNo;
@@ -30,9 +30,9 @@ class ShipmentRequest extends \ShipperHQ\WS\Request\AbstractWebServiceRequest im
      * @param Address $destination
      * @param Address $origin
      */
-    function __construct($shipmentList = null, \ShipperHQ\Shipping\Address $shippingAddress = null,
-                         \ShipperHQ\Shipping\Address $billingAddress = null,
-                         \ShipperHQ\WS\Request\Rate\ShipmentCustomerDetails $customerDetails = null,
+    function __construct($shipmentList = null,Address $shippingAddress = null,
+                         Address $billingAddress = null,
+                         hipmentCustomerDetails $customerDetails = null,
                          $carrierCode = null, $orderNo = null, $reserveOrderNo = null, $originName = null,
                          $methodCode = null)
     {
@@ -98,7 +98,7 @@ class ShipmentRequest extends \ShipperHQ\WS\Request\AbstractWebServiceRequest im
     /**
      * @param CustomerDetails $customerDetails
      */
-    public function setCustomerDetails(\ShipperHQ\WS\Request\Rate\CustomerDetails $customerDetails)
+    public function setCustomerDetails(CustomerDetails $customerDetails)
     {
         $this->customerDetails = $customerDetails;
     }

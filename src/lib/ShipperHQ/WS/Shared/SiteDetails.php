@@ -32,7 +32,7 @@ namespace ShipperHQ\WS\Shared;
 /**
  * Class SiteDetails
  *
- * @package ShipperHQ\WS\Shared\User
+ * @package ShipperHQ\WS\Shared
  */
 class SiteDetails
 {
