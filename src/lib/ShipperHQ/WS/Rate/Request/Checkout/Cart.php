@@ -51,7 +51,7 @@ class Cart {
     * @param int $qty
     * @param float $weight
     */
-   function __construct($declaredValue = 0.0, $freeShipping = false, $items = array(),
+   function __construct($declaredValue = 0.0, $freeShipping = false, $items = [],
                         $price = 0.0, $qty = 0, $weight = 0.0)
    {
       $this->declaredValue = $declaredValue;

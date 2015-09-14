@@ -36,13 +36,17 @@ namespace ShipperHQ\WS\Rate\Request;
  */
 class CustomerDetails
 {
+
+    /**
+     * @var null|string
+     */
     public $customerGroup;
 
-   /**
-    * @param null $customerGroup
-    */
-   function __construct($customerGroup = null)
-   {
-      $this->customerGroup = $customerGroup;
-   }
+    /**
+     * @param null|string $customerGroup
+     */
+    function __construct($customerGroup = null)
+    {
+        $this->customerGroup = $customerGroup;
+    }
 }

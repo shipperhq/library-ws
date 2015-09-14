@@ -2,14 +2,14 @@
 
 namespace ShipperHQ\WS;
 
-use \ShipperHQ\WS\Request\WebServiceRequest;
+use \ShipperHQ\WS\WebServiceRequestInterface;
 
 /**
  * Class AbstractWebServiceRequest
  *
  * @package ShipperHQ\WS\Request
  */
-abstract class AbstractWebServiceRequest implements WebServiceRequest
+abstract class AbstractWebServiceRequest implements WebServiceRequestInterface
 {
 
    public $credentials;

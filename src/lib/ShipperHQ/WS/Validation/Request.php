@@ -5,14 +5,14 @@ namespace ShipperHQ\WS\Validation;
 use ShipperHQ\WS\Validation\Address;
 
 use \ShipperHQ\WS\AbstractWebServiceRequest;
-use \ShipperHQ\WS\WebServiceRequest;
+use \ShipperHQ\WS\WebServiceRequestInterface;
 
 /**
  * Class RateRequest
  *
  * @package ShipperHQ\WS\Request\Rate
  */
-class Request extends AbstractWebServiceRequest implements WebServiceRequest
+class Request extends AbstractWebServiceRequest implements WebServiceRequestInterface
 {
 
     public $address;

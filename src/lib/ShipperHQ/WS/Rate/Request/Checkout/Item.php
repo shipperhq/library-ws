@@ -101,7 +101,7 @@ class Item
     * @param array $legacyAttributes
     * @param array $additionalAttributes
     */
-   function __construct($items = array(), $qty = 0, $weight = 0.0, $rowTotal = 0,
+   function __construct($items = [], $qty = 0, $weight = 0.0, $rowTotal = 0,
                         $basePrice = 0.0, $baseRowTotal = 0.0, $discountAmount = 0.0,
                         $discountPercent = 0.0, $discountedBasePrice = 0.0,
                         $discountedStorePrice = 0.0, $discountedTaxInclBasePrice = 0.0,
@@ -110,7 +110,7 @@ class Item
                         $name = "", $packageCurrency = "",$baseCurrency = "",
                         $storeBaseCurrency = "", $storeCurrentCurrency = "", $storePrice = 0.0, $taxInclBasePrice = 0.0,
                         $taxInclStorePrice = 0.0, $taxPercentage = 0.0, $type = "",
-                        $attributes = array(), $legacyAttributes = array(), $additionalAttributes = array())
+                        $attributes = [], $legacyAttributes = [], $additionalAttributes = [])
    {
       $this->additionalAttributes = $additionalAttributes;
       $this->attributes = $attributes;

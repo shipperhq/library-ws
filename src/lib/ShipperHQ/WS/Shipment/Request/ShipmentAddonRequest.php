@@ -1,9 +1,9 @@
 <?php
 
-namespace ShipperHQ\WS\Rate\Request;
+namespace ShipperHQ\WS\Shipment\Request;
 
 use \ShipperHQ\WS\AbstractWebServiceRequest;
-use \ShipperHQ\WS\WebServiceRequest;
+use \ShipperHQ\WS\WebServiceRequestInterface;
 
 
 /**
@@ -11,14 +11,12 @@ use \ShipperHQ\WS\WebServiceRequest;
  *
  * @package ShipperHQ\WS\Request\Rate
  */
-class ShipmentAddonRequest extends AbstractWebServiceRequest implements WebServiceRequest
+class ShipmentAddonRequest extends AbstractWebServiceRequest implements WebServiceRequestInterface
 {
     public $carrierCode;
     public $orderNo;
     public $reserveOrderNo;
     public $trackingNo;
-
-
     public $shipment;
 
     /**
@@ -73,7 +71,7 @@ class ShipmentAddonRequest extends AbstractWebServiceRequest implements WebServi
      */
     public function setShipment($shipmentList)
     {
-        $this->shipmentList = $shipmentList;
+        $this->shipment = $shipmentList;
     }
 
     /**
@@ -81,7 +79,7 @@ class ShipmentAddonRequest extends AbstractWebServiceRequest implements WebServi
      */
     public function getShipment()
     {
-        return $this->shipmentList;
+        return $this->shipment;
     }
 
     /**

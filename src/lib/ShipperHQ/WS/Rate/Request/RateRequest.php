@@ -7,7 +7,7 @@ use \ShipperHQ\WS\Shared\Address;
 
 use \ShipperHQ\WS\Rate\Request;
 use \ShipperHQ\WS\AbstractWebServiceRequest;
-use \ShipperHQ\WS\WebServiceRequest;
+use \ShipperHQ\WS\WebServiceRequestInterface;
 
 
 /**
@@ -15,7 +15,7 @@ use \ShipperHQ\WS\WebServiceRequest;
  *
  * @package ShipperHQ\WS\Request\Rate
  */
-class RateRequest extends AbstractWebServiceRequest implements WebServiceRequest
+class RateRequest extends AbstractWebServiceRequest implements WebServiceRequestInterface
 {
 
    public $cart;
