@@ -1,7 +1,7 @@
 <?php
 /**
  *
- * Webshopapps Shipping Module
+ * ShipperHQ Shipping Module
  *
  * NOTICE OF LICENSE
  *
@@ -19,7 +19,7 @@
  * versions in the future. If you wish to customize Magento for your
  * needs please refer to http://www.magentocommerce.com for more information.
  *
- * Shipper HQ Shipping
+ * ShipperHQ Shipping
  *
  * @category ShipperHQ
  * @package ShipperHQ_Shipping_Carrier
