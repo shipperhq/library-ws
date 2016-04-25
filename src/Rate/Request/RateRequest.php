@@ -34,12 +34,9 @@
 namespace ShipperHQ\WS\Rate\Request;
 
 use \ShipperHQ\WS\Shared\Address;
-
-
 use \ShipperHQ\WS\Rate\Request;
 use \ShipperHQ\WS\AbstractWebServiceRequest;
 use \ShipperHQ\WS\WebServiceRequestInterface;
-
 
 /**
  * Class RateRequest

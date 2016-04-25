@@ -33,14 +33,15 @@
  */
 namespace ShipperHQ\WS\Registration;
 
-use \ShipperHQ\WS\Shared;
-
+use \ShipperHQ\WS\Shared\Address;
+use \ShipperHQ\WS\AbstractWebServiceRequest;
+use \ShipperHQ\WS\WebServiceRequestInterface;
 /**
  * Class UPSRegistrationRequest
  *
  * @package ShipperHQ\WS\Registration
  */
-class UPSRegistrationRequest extends \ShipperHQ\WS\AbstractWebServiceRequest implements \ShipperHQ\WS\WebServiceRequestInterface
+class UPSRegistrationRequest extends AbstractWebServiceRequest implements WebServiceRequestInterface
 {
     public $proposedUserName;
     public $proposedPassWord;

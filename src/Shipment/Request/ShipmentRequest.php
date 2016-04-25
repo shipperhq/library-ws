@@ -38,7 +38,6 @@ use \ShipperHQ\WS\Shared\Address;
 use \ShipperHQ\WS\AbstractWebServiceRequest;
 use \ShipperHQ\WS\WebServiceRequestInterface;
 
-
 /**
  * Class RateRequest
  *
@@ -63,7 +62,7 @@ class ShipmentRequest extends AbstractWebServiceRequest implements WebServiceReq
      */
     function __construct($shipmentList = null,Address $shippingAddress = null,
                          Address $billingAddress = null,
-                         hipmentCustomerDetails $customerDetails = null,
+                         ShipmentCustomerDetails $customerDetails = null,
                          $carrierCode = null, $orderNo = null, $reserveOrderNo = null, $originName = null,
                          $methodCode = null)
     {

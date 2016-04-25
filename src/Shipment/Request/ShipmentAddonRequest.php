@@ -36,7 +36,6 @@ namespace ShipperHQ\WS\Shipment\Request;
 use \ShipperHQ\WS\AbstractWebServiceRequest;
 use \ShipperHQ\WS\WebServiceRequestInterface;
 
-
 /**
  * Class RateRequest
  *

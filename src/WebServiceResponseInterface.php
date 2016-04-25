@@ -33,7 +33,7 @@
  */
 namespace ShipperHQ\WS;
 
-use \ShipperHQ\WS\Rate\Response;
+use \ShipperHQ\WS\Rate\Response\ResponseSummary;
 
 /**
  * Interface WebServiceResponse
