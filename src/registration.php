@@ -31,22 +31,8 @@
  * Copyright © 2015 Magento. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace ShipperHQ\WS;
-
-use \ShipperHQ\WS\Rate\Response\ResponseSummary;
-
-/**
- * Interface WebServiceResponse
- *
- * @package ShipperHQ\WS\Response
- */
-interface WebServiceResponseInterface
-{
-    public function getErrors();
-
-    public function setErrors(array $errors);
-
-    public function getResponseSummary();
-
-    public function setResponseSummary(ResponseSummary $responseSummary);
-}
+\Magento\Framework\Component\ComponentRegistrar::register(
+    \Magento\Framework\Component\ComponentRegistrar::LIBRARY,
+    'ShipperHQ_WS',
+    __DIR__
+);

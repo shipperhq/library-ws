@@ -65,7 +65,7 @@ class Cart {
    /**
     * @param float $declaredValue
     */
-   public function setDeclaredValue(\float $declaredValue)
+   public function setDeclaredValue(float $declaredValue)
    {
       $this->declaredValue = $declaredValue;
    }
@@ -81,7 +81,7 @@ class Cart {
    /**
     * @param boolean $freeShipping
     */
-   public function setFreeShipping(\boolean $freeShipping)
+   public function setFreeShipping(boolean $freeShipping)
    {
       $this->freeShipping = $freeShipping;
    }
@@ -113,7 +113,7 @@ class Cart {
    /**
     * @param float $price
     */
-   public function setPrice(\float $price)
+   public function setPrice(float $price)
    {
       $this->price = $price;
    }
@@ -129,7 +129,7 @@ class Cart {
    /**
     * @param int $qty
     */
-   public function setQty(\integer $qty)
+   public function setQty(integer $qty)
    {
       $this->qty = $qty;
    }
@@ -145,7 +145,7 @@ class Cart {
    /**
     * @param float $weight
     */
-   public function setWeight(\float $weight)
+   public function setWeight(float $weight)
    {
       $this->weight = $weight;
    }
