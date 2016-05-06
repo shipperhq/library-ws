@@ -1,17 +1,31 @@
 {
     "name": "shipperhq/library-ws",
-    "description": "Magento2 web service library for ShipperHQ.",
-    "type": "library",
-    "require": {
-        "php": "~5.5.0|~5.6.0"
-    },
+    "description": "ShipperHQ WS Library",
+    "type": "magento2-library",
     "license": [
         "OSL-3.0",
         "AFL-3.0"
     ],
+    "authors": [
+        {
+            "name": "ShipperHQ",
+            "email": "sales@shipperhq.com",
+            "homepage": "http://www.Shipperhq.com"
+        },
+        {
+            "name": "Zowta LLC"
+        }
+    ],
+
+    "support": {
+        "documentation": "http://docs.shipperhq.com"
+    },
     "autoload": {
+        "files": [
+            "src/registration.php"
+        ],
         "psr-4": {
-            "ShipperHQ\\WS\\": ""
+            "ShipperHQ\\WS\\": "src/"
         }
     }
 }
