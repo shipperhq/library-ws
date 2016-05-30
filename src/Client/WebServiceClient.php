@@ -54,8 +54,8 @@ class WebServiceClient
 
         $jsonRequest = json_encode($requestObj);
         $debugRequest = $requestObj;
-        $debugRequest->credentials = null;
-        $jsonDebugRequest = json_encode($debugRequest);
+        $debugRequest->credentials->password = null;
+        $jsonDebugRequest = json_encode($debugRequest, JSON_PRETTY_PRINT);
         $debugData['json_request'] = $jsonDebugRequest;
         $debugData['url'] = $webServiceURL;
         $responseBody = '';
