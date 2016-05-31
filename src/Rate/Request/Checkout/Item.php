@@ -39,35 +39,37 @@ class Item
 {
 
    public $id;
-   public $name;
+   public $sku;
+   public $storePrice;
    public $weight;
    public $qty;
-   public $attributes;
+   public $type;
+   public $items;
    public $basePrice;
-   public $storePrice;
-   public $taxInclStorePrice;
    public $taxInclBasePrice;
-   public $discountedStorePrice;
-   public $discountedBasePrice;
-   public $discountedTaxInclStorePrice;
-   public $discountedTaxInclBasePrice;
+   public $taxInclStorePrice;
    public $rowTotal;
    public $baseRowTotal;
+   public $discountPercent;
+   public $discountedBasePrice;
+   public $discountedStorePrice;
+   public $discountedTaxInclBasePrice;
+   public $discountedTaxInclStorePrice;
+   public $discountAmount;
+   public $attributes;
+   public $legacyAttributes;
    public $baseCurrency;
    public $packageCurrency;
    public $storeBaseCurrency;
    public $storeCurrentCurrency;
    public $taxPercentage;
-   public $discountPercent;
-   public $discountAmount;
    public $freeShipping;
-//   public $freeMethodWeight;
    public $additionalAttributes;
-   public $legacyAttributes;
-   public $items;
-   public $type;
    public $fixedPrice;
    public $fixedWeight;
+   public $warehouseDetails;
+   public $pickupLocationDetails;
+   public $defaultWarehouseStockDetail;
 
    /**
     * @param array $items
@@ -107,7 +109,7 @@ class Item
                         $discountedStorePrice = 0.0, $discountedTaxInclBasePrice = 0.0,
                         $discountedTaxInclStorePrice = 0.0, $fixedPrice = false, $fixedWeight = 0.0,
                         $freeShipping = false, $id = 0,
-                        $name = "", $packageCurrency = "",$baseCurrency = "",
+                        $sku = "", $packageCurrency = "",$baseCurrency = "",
                         $storeBaseCurrency = "", $storeCurrentCurrency = "", $storePrice = 0.0, $taxInclBasePrice = 0.0,
                         $taxInclStorePrice = 0.0, $taxPercentage = 0.0, $type = "",
                         $attributes = [], $legacyAttributes = [], $additionalAttributes = [])
@@ -129,7 +131,7 @@ class Item
       $this->id = $id;
       $this->items = $items;
       $this->legacyAttributes = $legacyAttributes;
-      $this->name = $name;
+      $this->sku = $sku;
       $this->packageCurrency = $packageCurrency;
       $this->qty = $qty;
       $this->rowTotal = $rowTotal;
