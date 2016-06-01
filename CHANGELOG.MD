@@ -6,3 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Fixed composer file
 - Edited namespaces to fix inconsistencies
+
+## [20.0.2] - 2016-06-01
+### Added
+- SHQ16-613 Modified request to support inventory objects
