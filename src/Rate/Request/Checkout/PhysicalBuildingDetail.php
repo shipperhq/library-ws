@@ -36,7 +36,7 @@ namespace ShipperHQ\WS\Rate\Request\Checkout;
  */
 class PhysicalBuildingDetail extends StockDetail {
 
-    protected $name;
+    public $name;
 
     function __construct($name = null, $inventoryCount = null, $availabilityDate = null, $inStock = null)
     {

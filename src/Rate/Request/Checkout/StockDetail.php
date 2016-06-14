@@ -36,11 +36,11 @@ namespace ShipperHQ\WS\Rate\Request\Checkout;
  */
 class StockDetail {
 
-    protected $inventoryCount;
+    public $inventoryCount;
 
-    protected $availabilityDate;
+    public $availabilityDate;
 
-    protected $inStock;
+    public $inStock;
 
     function __construct($inventoryCount = null, $availabilityDate = null, $inStock = null)
     {
