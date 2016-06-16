@@ -36,9 +36,6 @@ namespace ShipperHQ\WS\Rate\Request\Checkout;
  */
 class Cart {
 
-   public $weight;
-   public $price;
-   public $qty;
    public $declaredValue;
    public $freeShipping;
    public $items;
@@ -57,15 +54,12 @@ class Cart {
       $this->declaredValue = $declaredValue;
       $this->freeShipping = $freeShipping;
       $this->items = $items;
-      $this->price = $price;
-      $this->qty = $qty;
-      $this->weight = $weight;
    }
 
    /**
     * @param float $declaredValue
     */
-   public function setDeclaredValue(float $declaredValue)
+   public function setDeclaredValue($declaredValue)
    {
       $this->declaredValue = $declaredValue;
    }
@@ -81,7 +75,7 @@ class Cart {
    /**
     * @param boolean $freeShipping
     */
-   public function setFreeShipping(boolean $freeShipping)
+   public function setFreeShipping($freeShipping)
    {
       $this->freeShipping = $freeShipping;
    }
@@ -110,51 +104,4 @@ class Cart {
       return $this->items;
    }
 
-   /**
-    * @param float $price
-    */
-   public function setPrice(float $price)
-   {
-      $this->price = $price;
-   }
-
-   /**
-    * @return float
-    */
-   public function getPrice()
-   {
-      return $this->price;
-   }
-
-   /**
-    * @param int $qty
-    */
-   public function setQty(integer $qty)
-   {
-      $this->qty = $qty;
-   }
-
-   /**
-    * @return int
-    */
-   public function getQty()
-   {
-      return $this->qty;
-   }
-
-   /**
-    * @param float $weight
-    */
-   public function setWeight(float $weight)
-   {
-      $this->weight = $weight;
-   }
-
-   /**
-    * @return float
-    */
-   public function getWeight()
-   {
-      return $this->weight;
-   }
 }
