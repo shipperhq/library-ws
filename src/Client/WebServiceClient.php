@@ -82,4 +82,54 @@ class WebServiceClient
 
         return $result;
     }
+
+    /**
+     * @param \ShipperHQ\WS\WebServiceRequest $requestObj
+     * @param $webServicePath
+     * @return mixed|null
+     */
+    public function sendAndReceiveWp(WebServiceRequestInterface $requestObj, $webServiceURL, $timeout = 30)
+    {
+
+        $jsonRequest = json_encode($requestObj);
+        $debugRequest = $requestObj;
+        $debugRequest->credentials->password = null;
+        $jsonDebugRequest = json_encode($debugRequest, JSON_PRETTY_PRINT);
+        $debugData['json_request'] = $jsonDebugRequest;
+        $debugData['url'] = $webServiceURL;
+        $responseBody = '';
+
+        $headers = array(
+            'Content-Type'  => 'application/json',
+        );
+
+        try {
+
+            $args = array(
+                'timeout' => $timeout,
+                'headers' => $headers,
+                'body'    => $jsonRequest
+            );
+
+            //$client->setConfig(['maxredirects' => 0, 'timeout' => $timeout]);  // TODO maxredirects
+            $response = wp_remote_post( $webServiceURL, $args );
+
+            if (!is_null($response)) {
+                $body = wp_remote_retrieve_body( $response );
+
+                // Decode if it's json
+                $responseBody = json_decode( $body, false );
+            }
+
+            $debugData['response'] = $responseBody;
+
+        } catch (\Exception $e) {
+            $debugData['error'] = ['error' => $e->getMessage(), 'code' => $e->getCode()];
+            $debugData['response'] = '';
+        }
+
+        $result = ['result' => $responseBody, 'debug' => $debugData];
+
+        return $result;
+    }
 }
