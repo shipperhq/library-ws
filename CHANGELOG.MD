@@ -19,3 +19,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [20.0.5] - 2016-06-15
 ### Added
 - SHQ16-1094 Changed permissions on inventory objects
+
+## [20.0.6] - 2016-06-27
+### Added
+- SHQ16-872 Add version number to composer file
