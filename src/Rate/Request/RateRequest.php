@@ -46,16 +46,17 @@ use \ShipperHQ\WS\WebServiceRequestInterface;
 class RateRequest extends AbstractWebServiceRequest implements WebServiceRequestInterface
 {
 
-   public $cart;
-   public $destination;
-   public $customerDetails;
-   public $cartType;
-   public $deliveryDateUTC;
-   public $deliveryDate;
-   public $carrierId;
-   public $carrierGroupId;
-   public $shipDetails;
-   public $carrierCode;
+    public $cart;
+    public $destination;
+    public $customerDetails;
+    public $cartType;
+    public $deliveryDateUTC;
+    public $deliveryDate;
+    public $carrierId;
+    public $carrierGroupId;
+    public $shipDetails;
+    public $carrierCode;
+    public $validateAddress;
 
    /**
     * @param null $cart
@@ -64,18 +65,20 @@ class RateRequest extends AbstractWebServiceRequest implements WebServiceRequest
     */
    function __construct($cart = null, Address $destination = null,
                         CustomerDetails $customerDetails = null,
-                        $cartType = "STD", $carrierId = null, $deliveryDateUTC = null, $deliveryDate = null,
+                        $cartType = "STD", $validateAddress = null,
+                        $carrierId = null, $deliveryDateUTC = null, $deliveryDate = null,
                         $carrierGroupId = null, ShipDetails $shipDetails = null)
    {
-      $this->cart = $cart;
-      $this->destination = $destination;
-      $this->customerDetails = $customerDetails;
-      $this->cartType = $cartType;
-      $this->carrierId = $carrierId;
-      $this->deliveryDate = $deliveryDate;
-      $this->deliveryDateUTC = $deliveryDateUTC;
-      $this->carrierGroupId = $carrierGroupId;
-      $this->shipDetails = $shipDetails;
+       $this->cart = $cart;
+       $this->destination = $destination;
+       $this->customerDetails = $customerDetails;
+       $this->cartType = $cartType;
+       $this->carrierId = $carrierId;
+       $this->deliveryDate = $deliveryDate;
+       $this->deliveryDateUTC = $deliveryDateUTC;
+       $this->carrierGroupId = $carrierGroupId;
+       $this->shipDetails = $shipDetails;
+       $this->validateAddress = $validateAddress;
    }
 
     /**
@@ -238,5 +241,23 @@ class RateRequest extends AbstractWebServiceRequest implements WebServiceRequest
     {
         return $this->carrierCode;
     }
+
+    /**
+     * @return null
+     */
+    public function getValidateAddress()
+    {
+        return $this->validateAddress;
+    }
+
+    /**
+     * @param null $validateAddress
+     */
+    public function setValidateAddress($validateAddress)
+    {
+        $this->validateAddress = $validateAddress;
+    }
+
+
 
 }
