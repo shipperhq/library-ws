@@ -23,3 +23,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [20.0.6] - 2016-06-27
 ### Added
 - SHQ16-872 Add version number to composer file
+
+## [20.0.7] - 2016-07-26
+### Added
+- SHQ16-1261 support for address validation in request
