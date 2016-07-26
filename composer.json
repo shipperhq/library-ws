@@ -2,7 +2,6 @@
     "name": "shipperhq/library-ws",
     "description": "ShipperHQ WS Library",
     "type": "magento2-library",
-    "version": "20.0.6",
     "license": [
         "OSL-3.0",
         "AFL-3.0"
