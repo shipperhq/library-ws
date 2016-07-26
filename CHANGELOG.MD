@@ -27,3 +27,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [20.0.7] - 2016-07-26
 ### Added
 - SHQ16-1261 support for address validation in request
+
+## [20.0.8] - 2016-07-26
+### Added
+- Removed composer version number
