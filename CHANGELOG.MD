@@ -1,5 +1,8 @@
 # Change Log
 
+## [20.0.13](https://github.com/webshopapps/library-ws/tree/20.0.13) (2017-01-24)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.12...20.0.13)
+
 ## [20.0.12](https://github.com/webshopapps/library-ws/tree/20.0.12) (2016-11-22)
 [Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.11...20.0.12)
 
@@ -7,7 +10,7 @@
 [Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.10...20.0.11)
 
 ## [20.0.10](https://github.com/webshopapps/library-ws/tree/20.0.10) (2016-08-15)
-[Full Changelog](https://github.com/webshopapps/library-ws/compare/1.2.5...20.0.10)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/1.2.1...20.0.10)
 
 **Merged pull requests:**
 
@@ -16,9 +19,6 @@
 - SHQ16-801 Renamed registration [\#2](https://github.com/webshopapps/library-ws/pull/2) ([wsakaren](https://github.com/wsakaren))
 - SHQ16-801 Moved registration out of the way [\#1](https://github.com/webshopapps/library-ws/pull/1) ([wsakaren](https://github.com/wsakaren))
 
-## [1.2.5](https://github.com/webshopapps/library-ws/tree/1.2.5) (2016-01-25)
-[Full Changelog](https://github.com/webshopapps/library-ws/compare/1.2.1...1.2.5)
-
 ## [1.2.1](https://github.com/webshopapps/library-ws/tree/1.2.1) (2016-01-25)
 [Full Changelog](https://github.com/webshopapps/library-ws/compare/1.2.2...1.2.1)
 
@@ -26,7 +26,10 @@
 [Full Changelog](https://github.com/webshopapps/library-ws/compare/1.2.3...1.2.2)
 
 ## [1.2.3](https://github.com/webshopapps/library-ws/tree/1.2.3) (2016-01-25)
-[Full Changelog](https://github.com/webshopapps/library-ws/compare/1.2.4...1.2.3)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/1.2.5...1.2.3)
+
+## [1.2.5](https://github.com/webshopapps/library-ws/tree/1.2.5) (2016-01-25)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/1.2.4...1.2.5)
 
 ## [1.2.4](https://github.com/webshopapps/library-ws/tree/1.2.4) (2016-01-25)
 [Full Changelog](https://github.com/webshopapps/library-ws/compare/1.1.0...1.2.4)
