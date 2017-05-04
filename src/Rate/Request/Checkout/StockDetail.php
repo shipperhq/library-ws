@@ -34,7 +34,8 @@ namespace ShipperHQ\WS\Rate\Request\Checkout;
  *
  * @package ShipperHQ\Shipping
  */
-class StockDetail {
+class StockDetail
+{
 
     public $inventoryCount;
 
@@ -42,7 +43,7 @@ class StockDetail {
 
     public $inStock;
 
-    function __construct($inventoryCount = null, $availabilityDate = null, $inStock = null)
+    public function __construct($inventoryCount = null, $availabilityDate = null, $inStock = null)
     {
         $this->inventoryCount = $inventoryCount;
         $this->availabilityDate = $availabilityDate;
@@ -96,6 +97,4 @@ class StockDetail {
     {
         $this->inStock = $inStock;
     }
-
-
 }

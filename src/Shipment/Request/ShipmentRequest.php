@@ -60,12 +60,18 @@ class ShipmentRequest extends AbstractWebServiceRequest implements WebServiceReq
      * @param Address $destination
      * @param Address $origin
      */
-    function __construct($shipmentList = null,Address $shippingAddress = null,
-                         Address $billingAddress = null,
-                         ShipmentCustomerDetails $customerDetails = null,
-                         $carrierCode = null, $orderNo = null, $reserveOrderNo = null, $originName = null,
-                         $methodCode = null)
-    {
+    public function __construct(
+        $shipmentList = null,
+        Address $shippingAddress = null,
+        Address $billingAddress = null,
+        ShipmentCustomerDetails $customerDetails = null,
+        $carrierCode = null,
+        $orderNo = null,
+        $reserveOrderNo = null,
+        $originName = null,
+        $methodCode = null
+    ) {
+    
         $this->shipment = $shipmentList;
         $this->shippingAddress = $shippingAddress;
         $this->billingAddress = $billingAddress;
@@ -204,6 +210,4 @@ class ShipmentRequest extends AbstractWebServiceRequest implements WebServiceReq
     {
         return $this->methodCode;
     }
-
-
 }

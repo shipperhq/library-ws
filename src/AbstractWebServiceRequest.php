@@ -43,39 +43,38 @@ use \ShipperHQ\WS\WebServiceRequestInterface;
 abstract class AbstractWebServiceRequest implements WebServiceRequestInterface
 {
 
-   public $credentials;
-   public $siteDetails;
+    public $credentials;
+    public $siteDetails;
 
    /**
     * @return mixed
     */
-   function getCredentials()
-   {
-      return $this->credentials;
-   }
+    public function getCredentials()
+    {
+        return $this->credentials;
+    }
 
    /**
     * @param \ShipperHQ\WS\Shared\Credentials $credentials
     */
-   function setCredentials(\ShipperHQ\WS\Shared\Credentials $credentials)
-   {
-      $this->credentials = $credentials;
-   }
+    public function setCredentials(\ShipperHQ\WS\Shared\Credentials $credentials)
+    {
+        $this->credentials = $credentials;
+    }
 
    /**
     * @return mixed
     */
-   function getSiteDetails()
-   {
-      return $this->siteDetails;
-   }
+    public function getSiteDetails()
+    {
+        return $this->siteDetails;
+    }
 
    /**
     * @param \ShipperHQ\WS\Shared\SiteDetails $siteDetails
     */
-   function setSiteDetails(\ShipperHQ\WS\Shared\SiteDetails $siteDetails)
-   {
-      $this->siteDetails = $siteDetails;
-   }
+    public function setSiteDetails(\ShipperHQ\WS\Shared\SiteDetails $siteDetails)
+    {
+        $this->siteDetails = $siteDetails;
+    }
 }
-

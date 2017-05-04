@@ -36,6 +36,7 @@ namespace ShipperHQ\WS\Validation;
 use ShipperHQ\WS\Validation\Address;
 use \ShipperHQ\WS\AbstractWebServiceRequest;
 use \ShipperHQ\WS\WebServiceRequestInterface;
+
 /**
  * Class RateRequest
  *
@@ -51,11 +52,10 @@ class Request extends AbstractWebServiceRequest implements WebServiceRequestInte
      * @param Address $destination
      * @param Address $origin
      */
-    function __construct(Address $address = null)
+    public function __construct(Address $address = null)
     {
         $this->address = $address;
     }
-
 
     /**
      * @param Address $address

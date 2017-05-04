@@ -43,10 +43,5 @@ use \ShipperHQ\WS\WebServiceRequestInterface;
  */
 class InfoRequest extends AbstractWebServiceRequest implements WebServiceRequestInterface
 {
-   /* function __construct()
-    {
-
-    }*/
-
 
 }

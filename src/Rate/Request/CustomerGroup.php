@@ -42,9 +42,9 @@ class CustomerGroup
    /**
     * @param null $customerGroup
     */
-   function __construct($name = null, $description = null)
-   {
-      $this->name = $name;
-      $this->description = $description;
-   }
+    public function __construct($name = null, $description = null)
+    {
+        $this->name = $name;
+        $this->description = $description;
+    }
 }

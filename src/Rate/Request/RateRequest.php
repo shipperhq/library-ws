@@ -63,23 +63,30 @@ class RateRequest extends AbstractWebServiceRequest implements WebServiceRequest
     * @param Address $destination
     * @param Address $origin
     */
-   function __construct($cart = null, Address $destination = null,
-                        CustomerDetails $customerDetails = null,
-                        $cartType = "STD", $validateAddress = null,
-                        $carrierId = null, $deliveryDateUTC = null, $deliveryDate = null,
-                        $carrierGroupId = null, ShipDetails $shipDetails = null)
-   {
-       $this->cart = $cart;
-       $this->destination = $destination;
-       $this->customerDetails = $customerDetails;
-       $this->cartType = $cartType;
-       $this->carrierId = $carrierId;
-       $this->deliveryDate = $deliveryDate;
-       $this->deliveryDateUTC = $deliveryDateUTC;
-       $this->carrierGroupId = $carrierGroupId;
-       $this->shipDetails = $shipDetails;
-       $this->validateAddress = $validateAddress;
-   }
+    public function __construct(
+        $cart = null,
+        Address $destination = null,
+        CustomerDetails $customerDetails = null,
+        $cartType = "STD",
+        $validateAddress = null,
+        $carrierId = null,
+        $deliveryDateUTC = null,
+        $deliveryDate = null,
+        $carrierGroupId = null,
+        ShipDetails $shipDetails = null
+    ) {
+    
+        $this->cart = $cart;
+        $this->destination = $destination;
+        $this->customerDetails = $customerDetails;
+        $this->cartType = $cartType;
+        $this->carrierId = $carrierId;
+        $this->deliveryDate = $deliveryDate;
+        $this->deliveryDateUTC = $deliveryDateUTC;
+        $this->carrierGroupId = $carrierGroupId;
+        $this->shipDetails = $shipDetails;
+        $this->validateAddress = $validateAddress;
+    }
 
     /**
      * @param mixed $deliveryDate
@@ -100,51 +107,50 @@ class RateRequest extends AbstractWebServiceRequest implements WebServiceRequest
    /**
     * @param mixed $cart
     */
-   public function setCart($cart)
-   {
-      $this->cart = $cart;
-   }
+    public function setCart($cart)
+    {
+        $this->cart = $cart;
+    }
 
    /**
     * @return mixed
     */
-   public function getCart()
-   {
-      return $this->cart;
-   }
+    public function getCart()
+    {
+        return $this->cart;
+    }
 
    /**
     * @param Address $destination
     */
-   public function setDestination(Address $destination)
-   {
-      $this->destination = $destination;
-   }
+    public function setDestination(Address $destination)
+    {
+        $this->destination = $destination;
+    }
 
    /**
     * @return Address
     */
-   public function getDestination()
-   {
-      return $this->destination;
-   }
-
+    public function getDestination()
+    {
+        return $this->destination;
+    }
 
    /**
     * @param CustomerDetails $customerDetails
     */
-   public function setCustomerDetails(CustomerDetails $customerDetails)
-   {
-      $this->customerDetails = $customerDetails;
-   }
+    public function setCustomerDetails(CustomerDetails $customerDetails)
+    {
+        $this->customerDetails = $customerDetails;
+    }
 
    /**
     * @return CustomerDetails
     */
-  public function getCustomerDetails()
-   {
-      return $this->customerDetails;
-   }
+    public function getCustomerDetails()
+    {
+        return $this->customerDetails;
+    }
 
     /**
      * @param null $deliveryDateUTC
@@ -257,7 +263,4 @@ class RateRequest extends AbstractWebServiceRequest implements WebServiceRequest
     {
         $this->validateAddress = $validateAddress;
     }
-
-
-
 }

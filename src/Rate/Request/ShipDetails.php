@@ -41,7 +41,7 @@ class ShipDetails
     /**
      * @param null $pickupId
      */
-    function __construct($pickupId = null)
+    public function __construct($pickupId = null)
     {
         $this->pickupId = $pickupId;
     }

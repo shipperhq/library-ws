@@ -34,11 +34,12 @@ namespace ShipperHQ\WS\Rate\Request\Checkout;
  *
  * @package ShipperHQ\Shipping
  */
-class PhysicalBuildingDetail extends StockDetail {
+class PhysicalBuildingDetail extends StockDetail
+{
 
     public $name;
 
-    function __construct($name = null, $inventoryCount = null, $availabilityDate = null, $inStock = null)
+    public function __construct($name = null, $inventoryCount = null, $availabilityDate = null, $inStock = null)
     {
         $this->name = $name;
         parent::__construct($inventoryCount, $availabilityDate, $inStock);
@@ -59,5 +60,4 @@ class PhysicalBuildingDetail extends StockDetail {
     {
         $this->name = $name;
     }
-
 }

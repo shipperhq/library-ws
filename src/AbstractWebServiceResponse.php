@@ -49,7 +49,7 @@ abstract class AbstractWebServiceResponse implements WebServiceResponseInterface
      * @param ResponseSummary $responseSummary
      * @param array $errors
      */
-    function __construct(ResponseSummary $responseSummary = null, array $errors = [])
+    public function __construct(ResponseSummary $responseSummary = null, array $errors = [])
     {
         $this->responseSummary = $responseSummary;
         $this->errors = $errors;
@@ -86,7 +86,4 @@ abstract class AbstractWebServiceResponse implements WebServiceResponseInterface
     {
         return $this->responseSummary;
     }
-
-
 }
-

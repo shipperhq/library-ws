@@ -37,18 +37,18 @@ namespace ShipperHQ\WS\Shared;
 class Address
 {
 
-   public $country;
-   public $region;
-   public $city;
-   public $street;
-   public $street2;
-   public $zipcode;
-   public $accessorials;
-   public $selectedOptions;
-   public $email;
-   public $givenName;
-   public $familyName;
-   public $telNo;
+    public $country;
+    public $region;
+    public $city;
+    public $street;
+    public $street2;
+    public $zipcode;
+    public $accessorials;
+    public $selectedOptions;
+    public $email;
+    public $givenName;
+    public $familyName;
+    public $telNo;
 
    /**
     * @param null $accessorials
@@ -60,135 +60,146 @@ class Address
     * @param null $zipcode
     * @param null $selectedOptions
     */
-   function __construct($accessorials = null, $city = null, $country = null, $region = null,
-                        $street = null, $street2 = null, $zipcode = null, $email = null, $firstName = null,
-                        $lastName = null, $telephone = null, $selectedOptions = null)
-   {
-      $this->accessorials = $accessorials;
-      $this->city = $city;
-      $this->country = $country;
-      $this->region = $region;
-      $this->street = $street;
-      $this->street2 = $street2;
-      $this->zipcode = $zipcode;
-      $this->email = $email;
-      $this->givenName = $firstName;
-      $this->familyName = $lastName;
-      $this->telNo = $telephone;
-      $this->selectedOptions = $selectedOptions;
-   }
+    public function __construct(
+        $accessorials = null,
+        $city = null,
+        $country = null,
+        $region = null,
+        $street = null,
+        $street2 = null,
+        $zipcode = null,
+        $email = null,
+        $firstName = null,
+        $lastName = null,
+        $telephone = null,
+        $selectedOptions = null
+    ) {
+    
+        $this->accessorials = $accessorials;
+        $this->city = $city;
+        $this->country = $country;
+        $this->region = $region;
+        $this->street = $street;
+        $this->street2 = $street2;
+        $this->zipcode = $zipcode;
+        $this->email = $email;
+        $this->givenName = $firstName;
+        $this->familyName = $lastName;
+        $this->telNo = $telephone;
+        $this->selectedOptions = $selectedOptions;
+    }
 
    /**
     * @param mixed zipcode
     */
-   public function setZipcode($zipcode)
-   {
-      $this->zipcode = $zipcode;
-   }
+    public function setZipcode($zipcode)
+    {
+        $this->zipcode = $zipcode;
+    }
 
    /**
     * @return mixed
     */
-   public function getZipcode()
-   {
-      return $this->zipcode;
-   }
+    public function getZipcode()
+    {
+        return $this->zipcode;
+    }
 
    /**
     * @param Accessorials $accessorials
     */
-   public function setSelectedOptions($selectedOptions)
-   {
-      $this->selectedOptions = $selectedOptions;
-   }
+    public function setSelectedOptions($selectedOptions)
+    {
+        $this->selectedOptions = $selectedOptions;
+    }
 
    /**
     * @return Accessorials
     */
-   public function getSelectedOptions()
-   {
-      return $this->selectedOptions;
-   }
+    public function getSelectedOptions()
+    {
+        return $this->selectedOptions;
+    }
 
    /**
     * @param mixed $city
     */
-   public function setCity($city)
-   {
-      $this->city = $city;
-   }
+    public function setCity($city)
+    {
+        $this->city = $city;
+    }
 
    /**
     * @return mixed
     */
-   public function getCity()
-   {
-      return $this->city;
-   }
+    public function getCity()
+    {
+        return $this->city;
+    }
 
    /**
     * @param mixed $country
     */
-   public function setCountry($country)
-   {
-      $this->country = $country;
-   }
+    public function setCountry($country)
+    {
+        $this->country = $country;
+    }
 
    /**
     * @return mixed
     */
-   public function getCountry()
-   {
-      return $this->country;
-   }
+    public function getCountry()
+    {
+        return $this->country;
+    }
 
    /**
     * @param mixed $region
     */
-   public function setRegion($region)
-   {
-      $this->region = $region;
-   }
+    public function setRegion($region)
+    {
+        $this->region = $region;
+    }
 
    /**
     * @return mixed
     */
-   public function getRegion()
-   {
-      return $this->region;
-   }
+    public function getRegion()
+    {
+        return $this->region;
+    }
 
    /**
     * @param mixed $street
     */
-   public function setStreet($street)
-   {
-      $this->street = $street;
-   }
+    public function setStreet($street)
+    {
+        $this->street = $street;
+    }
 
    /**
     * @return mixed
     */
-   public function getStreet()
-   {
-      return $this->street;
-   }
+    public function getStreet()
+    {
+        return $this->street;
+    }
 
    /**
     * @param mixed $street2
     */
-   public function setStreet2($street2)
-   {
-      $this->street2 = $street2;
-   }
+    public function setStreet2($street2)
+    {
+        $this->street2 = $street2;
+    }
 
    /**
     * @return mixed
     */
-   public function getStreet2()
-   {
-      return $this->street2;
-   }
+    public function getStreet2()
+    {
+        return $this->street2;
+    }
 
     /**
      * @param null $accessorials
@@ -269,5 +280,4 @@ class Address
     {
         return $this->telNo;
     }
-
-} 
+}

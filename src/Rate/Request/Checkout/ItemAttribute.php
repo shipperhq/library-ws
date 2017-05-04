@@ -34,50 +34,51 @@ namespace ShipperHQ\WS\Rate\Request\Checkout;
  *
  * @package ShipperHQ\Checkout
  */
-class ItemAttribute {
+class ItemAttribute
+{
 
-   public $name;
-   public $value;
+    public $name;
+    public $value;
 
    /**
     * @param string $name
     * @param string $value
     */
-   function __construct($name = "", $value = "")
-   {
-      $this->name = $name;
-      $this->value = $value;
-   }
+    public function __construct($name = "", $value = "")
+    {
+        $this->name = $name;
+        $this->value = $value;
+    }
 
    /**
     * @param string $name
     */
-   public function setName($name)
-   {
-      $this->name = $name;
-   }
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
 
    /**
     * @return string
     */
-   public function getName()
-   {
-      return $this->name;
-   }
+    public function getName()
+    {
+        return $this->name;
+    }
 
    /**
     * @param string $value
     */
-   public function setValue($value)
-   {
-      $this->value = $value;
-   }
+    public function setValue($value)
+    {
+        $this->value = $value;
+    }
 
    /**
     * @return string
     */
-   public function getValue()
-   {
-      return $this->value;
-   }
+    public function getValue()
+    {
+        return $this->value;
+    }
 }
