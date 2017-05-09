@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Sync branches [\#6](https://github.com/webshopapps/library-ws/pull/6) ([wsajason](https://github.com/wsajason))
 - SHQ16-2029 code sniffer changes [\#5](https://github.com/webshopapps/library-ws/pull/5) ([wsagen](https://github.com/wsagen))
 
 ## [20.0.14](https://github.com/webshopapps/library-ws/tree/20.0.14) (2017-01-24)
