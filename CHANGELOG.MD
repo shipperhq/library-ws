@@ -1,5 +1,8 @@
 # Change Log
 
+## [20.0.17](https://github.com/webshopapps/library-ws/tree/20.0.17) (2017-05-09)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.15...20.0.17)
+
 ## [20.0.15](https://github.com/webshopapps/library-ws/tree/20.0.15) (2017-05-09)
 [Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.16...20.0.15)
 
