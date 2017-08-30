@@ -1,13 +1,16 @@
 # Change Log
 
 ## [20.0.17](https://github.com/webshopapps/library-ws/tree/20.0.17) (2017-05-09)
-[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.15...20.0.17)
-
-## [20.0.15](https://github.com/webshopapps/library-ws/tree/20.0.15) (2017-05-09)
-[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.16...20.0.15)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.16...20.0.17)
 
 ## [20.0.16](https://github.com/webshopapps/library-ws/tree/20.0.16) (2017-05-09)
-[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.14...20.0.16)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.15...20.0.16)
+
+## [20.0.15](https://github.com/webshopapps/library-ws/tree/20.0.15) (2017-05-09)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.18...20.0.15)
+
+## [20.0.18](https://github.com/webshopapps/library-ws/tree/20.0.18) (2017-05-09)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.14...20.0.18)
 
 **Merged pull requests:**
 
@@ -40,16 +43,16 @@
 [Full Changelog](https://github.com/webshopapps/library-ws/compare/1.2.3...1.2.4)
 
 ## [1.2.3](https://github.com/webshopapps/library-ws/tree/1.2.3) (2016-01-25)
-[Full Changelog](https://github.com/webshopapps/library-ws/compare/1.2.2...1.2.3)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/1.2.5...1.2.3)
+
+## [1.2.5](https://github.com/webshopapps/library-ws/tree/1.2.5) (2016-01-25)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/1.2.2...1.2.5)
 
 ## [1.2.2](https://github.com/webshopapps/library-ws/tree/1.2.2) (2016-01-25)
 [Full Changelog](https://github.com/webshopapps/library-ws/compare/1.2.1...1.2.2)
 
 ## [1.2.1](https://github.com/webshopapps/library-ws/tree/1.2.1) (2016-01-25)
-[Full Changelog](https://github.com/webshopapps/library-ws/compare/1.2.5...1.2.1)
-
-## [1.2.5](https://github.com/webshopapps/library-ws/tree/1.2.5) (2016-01-25)
-[Full Changelog](https://github.com/webshopapps/library-ws/compare/1.1.0...1.2.5)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/1.1.0...1.2.1)
 
 ## [1.1.0](https://github.com/webshopapps/library-ws/tree/1.1.0) (2015-12-11)
 
