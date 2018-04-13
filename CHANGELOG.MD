@@ -1,17 +1,18 @@
 # Change Log
 
+## [20.3.1](https://github.com/webshopapps/library-ws/tree/20.3.1) (2018-04-13)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.3.0...20.3.1)
+
+**Merged pull requests:**
+
+- SHQ18-196 Add missing composer version [\#8](https://github.com/webshopapps/library-ws/pull/8) ([TravisBernard](https://github.com/TravisBernard))
+
 ## [20.3.0](https://github.com/webshopapps/library-ws/tree/20.3.0) (2017-12-19)
-[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.15...20.3.0)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.1.0...20.3.0)
 
 **Merged pull requests:**
 
 - SHQ16-2434 add IP address to site details in request [\#7](https://github.com/webshopapps/library-ws/pull/7) ([wsagen](https://github.com/wsagen))
-
-## [20.0.15](https://github.com/webshopapps/library-ws/tree/20.0.15) (2017-05-09)
-[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.2.0...20.0.15)
-
-## [20.2.0](https://github.com/webshopapps/library-ws/tree/20.2.0) (2017-05-09)
-[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.1.0...20.2.0)
 
 ## [20.1.0](https://github.com/webshopapps/library-ws/tree/20.1.0) (2017-05-09)
 [Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.18...20.1.0)
@@ -23,18 +24,24 @@
 [Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.16...20.0.17)
 
 ## [20.0.16](https://github.com/webshopapps/library-ws/tree/20.0.16) (2017-05-09)
-[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.13...20.0.16)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.15...20.0.16)
+
+## [20.0.15](https://github.com/webshopapps/library-ws/tree/20.0.15) (2017-05-09)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.2.0...20.0.15)
+
+## [20.2.0](https://github.com/webshopapps/library-ws/tree/20.2.0) (2017-05-09)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.14...20.2.0)
 
 **Merged pull requests:**
 
 - Sync branches [\#6](https://github.com/webshopapps/library-ws/pull/6) ([wsajason](https://github.com/wsajason))
 - SHQ16-2029 code sniffer changes [\#5](https://github.com/webshopapps/library-ws/pull/5) ([wsagen](https://github.com/wsagen))
 
-## [20.0.13](https://github.com/webshopapps/library-ws/tree/20.0.13) (2017-01-24)
-[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.14...20.0.13)
-
 ## [20.0.14](https://github.com/webshopapps/library-ws/tree/20.0.14) (2017-01-24)
-[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.12...20.0.14)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.13...20.0.14)
+
+## [20.0.13](https://github.com/webshopapps/library-ws/tree/20.0.13) (2017-01-24)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.12...20.0.13)
 
 ## [20.0.12](https://github.com/webshopapps/library-ws/tree/20.0.12) (2016-11-22)
 [Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.11...20.0.12)
@@ -43,7 +50,7 @@
 [Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.10...20.0.11)
 
 ## [20.0.10](https://github.com/webshopapps/library-ws/tree/20.0.10) (2016-08-15)
-[Full Changelog](https://github.com/webshopapps/library-ws/compare/1.2.4...20.0.10)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/1.2.5...20.0.10)
 
 **Merged pull requests:**
 
@@ -51,6 +58,9 @@
 - SHQ16-1085 SHQ16-873 Added support for woocommerce [\#3](https://github.com/webshopapps/library-ws/pull/3) ([wsagen](https://github.com/wsagen))
 - SHQ16-801 Renamed registration [\#2](https://github.com/webshopapps/library-ws/pull/2) ([wsakaren](https://github.com/wsakaren))
 - SHQ16-801 Moved registration out of the way [\#1](https://github.com/webshopapps/library-ws/pull/1) ([wsakaren](https://github.com/wsakaren))
+
+## [1.2.5](https://github.com/webshopapps/library-ws/tree/1.2.5) (2016-01-25)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/1.2.4...1.2.5)
 
 ## [1.2.4](https://github.com/webshopapps/library-ws/tree/1.2.4) (2016-01-25)
 [Full Changelog](https://github.com/webshopapps/library-ws/compare/1.2.3...1.2.4)
@@ -62,10 +72,7 @@
 [Full Changelog](https://github.com/webshopapps/library-ws/compare/1.2.1...1.2.2)
 
 ## [1.2.1](https://github.com/webshopapps/library-ws/tree/1.2.1) (2016-01-25)
-[Full Changelog](https://github.com/webshopapps/library-ws/compare/1.2.5...1.2.1)
-
-## [1.2.5](https://github.com/webshopapps/library-ws/tree/1.2.5) (2016-01-25)
-[Full Changelog](https://github.com/webshopapps/library-ws/compare/1.1.0...1.2.5)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/1.1.0...1.2.1)
 
 ## [1.1.0](https://github.com/webshopapps/library-ws/tree/1.1.0) (2015-12-11)
 
