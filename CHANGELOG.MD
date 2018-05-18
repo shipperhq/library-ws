@@ -1,5 +1,8 @@
 # Change Log
 
+## [20.3.2](https://github.com/webshopapps/library-ws/tree/20.3.2) (2018-05-18)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.3.1...20.3.2)
+
 ## [20.3.1](https://github.com/webshopapps/library-ws/tree/20.3.1) (2018-04-13)
 [Full Changelog](https://github.com/webshopapps/library-ws/compare/20.3.0...20.3.1)
 
@@ -8,11 +11,14 @@
 - SHQ18-196 Add missing composer version [\#8](https://github.com/webshopapps/library-ws/pull/8) ([TravisBernard](https://github.com/TravisBernard))
 
 ## [20.3.0](https://github.com/webshopapps/library-ws/tree/20.3.0) (2017-12-19)
-[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.1.0...20.3.0)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.2.0...20.3.0)
 
 **Merged pull requests:**
 
 - SHQ16-2434 add IP address to site details in request [\#7](https://github.com/webshopapps/library-ws/pull/7) ([wsagen](https://github.com/wsagen))
+
+## [20.2.0](https://github.com/webshopapps/library-ws/tree/20.2.0) (2017-05-09)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.1.0...20.2.0)
 
 ## [20.1.0](https://github.com/webshopapps/library-ws/tree/20.1.0) (2017-05-09)
 [Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.18...20.1.0)
@@ -27,10 +33,7 @@
 [Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.15...20.0.16)
 
 ## [20.0.15](https://github.com/webshopapps/library-ws/tree/20.0.15) (2017-05-09)
-[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.2.0...20.0.15)
-
-## [20.2.0](https://github.com/webshopapps/library-ws/tree/20.2.0) (2017-05-09)
-[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.14...20.2.0)
+[Full Changelog](https://github.com/webshopapps/library-ws/compare/20.0.14...20.0.15)
 
 **Merged pull requests:**
 
