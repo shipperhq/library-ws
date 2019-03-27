@@ -50,6 +50,11 @@ class WebServiceClient
      */
     public function sendAndReceive(WebServiceRequestInterface $requestObj, $webServiceURL, $timeout = 30)
     {
+        if (!$requestObj || $requestObj == "") {
+            //SHQ18-1712
+            return array('result' => '', 'debug' => 'Error - Could not create ShipperHQ request');
+        }
+
 
         $jsonRequest = json_encode($requestObj);
         $debugRequest = $requestObj;
