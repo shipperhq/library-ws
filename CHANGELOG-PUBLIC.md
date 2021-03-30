@@ -6,3 +6,7 @@ Bring releases and versioning back in line
 SHQ18-1712 Dont send empty request to ShipperHQ
 
 
+## 20.5.0 (2021-03-30)
+RIV-443 Add placeorder support
+
+
