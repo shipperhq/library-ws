@@ -11,8 +11,7 @@
 
 namespace ShipperHQ\WS\PostOrder\Placeorder\Request;
 
-use \ShipperHQ\WS\Shared\Address;
-
+use \ShipperHQ\WS\Shared\BasicAddress;
 use \ShipperHQ\WS\AbstractWebServiceRequest;
 use \ShipperHQ\WS\WebServiceRequestInterface;
 
@@ -28,6 +27,7 @@ class PlaceOrderRequest extends AbstractWebServiceRequest implements WebServiceR
     public $carrierCode;
     public $methodCode;
     public $transId;
+    public $recipient;
 
     /**
      * @param null $orderNumber
@@ -41,13 +41,15 @@ class PlaceOrderRequest extends AbstractWebServiceRequest implements WebServiceR
         $totalCharges = null,
         $carrierCode = null,
         $methodCode = null,
-        $transId = null
+        $transId = null,
+        BasicAddress $recipient = null
     ) {
         $this->orderNumber = $orderNumber;
         $this->totalCharges = $totalCharges;
         $this->carrierCode = $carrierCode;
         $this->methodCode = $methodCode;
         $this->transId = $transId;
+        $this->recipient = $recipient;
     }
 
     /**
@@ -129,4 +131,22 @@ class PlaceOrderRequest extends AbstractWebServiceRequest implements WebServiceR
     {
         $this->transId = $transId;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getRecipient()
+    {
+        return $this->recipient;
+    }
+
+    /**
+     * @param mixed $recipient
+     */
+    public function setRecipient($recipient): void
+    {
+        $this->recipient = $recipient;
+    }
+
+
 }

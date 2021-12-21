@@ -10,3 +10,7 @@ SHQ18-1712 Dont send empty request to ShipperHQ
 RIV-443 Add placeorder support
 
 
+## 20.6.0 (2021-12-21)
+RIV-530 Support address for placeOrder request
+
+
