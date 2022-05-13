@@ -51,7 +51,7 @@ class WebServiceClient
             $client->setRawData($jsonRequest, 'application/json');
             $response = $client->request(\Zend_Http_Client::POST);
             if ($response !== null) {
-                $responseBody = $response->getBody();
+                $responseBody = (string) $response->getBody();
             }
 
             $debugData['response'] = $responseBody;
@@ -99,7 +99,7 @@ class WebServiceClient
                 $body = wp_remote_retrieve_body($response);
 
                 // Decode if it's json
-                $responseBody = json_decode($body, false);
+                $responseBody = json_decode((string) $body, false);
             }
 
             $debugData['response'] = $responseBody;
