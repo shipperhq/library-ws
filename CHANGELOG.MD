@@ -15,6 +15,10 @@ RIV-530 Support address for placeOrder request
 
 
 ## 20.7.0 (2022-05-13)
-MND-2430 M2.4.4 compatibility
+MNB-2430 M2.4.4 compatibility
+
+
+## 20.7.1 (2023-03-22)
+SHQ23-365 Move from Zend_Http to Laminas_Http
 
 

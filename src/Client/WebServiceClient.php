@@ -11,7 +11,9 @@
 
 namespace ShipperHQ\WS\Client;
 
-use \ShipperHQ\WS\WebServiceRequestInterface;
+use Laminas\Http\Client;
+use Laminas\Http\Request;
+use ShipperHQ\WS\WebServiceRequestInterface;
 
 /**
  * Class WebServiceClient
@@ -30,9 +32,8 @@ class WebServiceClient
     {
         if (!$requestObj || $requestObj == "") {
             //SHQ18-1712
-            return array('result' => '', 'debug' => 'Error - Could not create ShipperHQ request');
+            return ['result' => '', 'debug' => 'Error - Could not create ShipperHQ request'];
         }
-
 
         $jsonRequest = json_encode($requestObj);
         $debugRequest = $requestObj;
@@ -45,11 +46,12 @@ class WebServiceClient
         $responseBody = '';
 
         try {
-            $client = new \Zend_Http_Client();
+            $client = new Client();
             $client->setUri($webServiceURL);
-            $client->setConfig(['maxredirects' => 0, 'timeout' => $timeout]);
-            $client->setRawData($jsonRequest, 'application/json');
-            $response = $client->request(\Zend_Http_Client::POST);
+            $client->setOptions(['maxredirects' => 0, 'timeout' => $timeout]);
+            $client->setRawBody($jsonRequest);
+            $client->setEncType('application/json');
+            $response = $client->setMethod(Request::METHOD_POST)->send();
             if ($response !== null) {
                 $responseBody = (string) $response->getBody();
             }
@@ -73,7 +75,6 @@ class WebServiceClient
      */
     public function sendAndReceiveWp(WebServiceRequestInterface $requestObj, $webServiceURL, $timeout = 30)
     {
-
         $jsonRequest = json_encode($requestObj);
         $debugRequest = $requestObj;
         $debugRequest->credentials->password = null;
