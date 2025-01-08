@@ -22,3 +22,7 @@ MNB-2430 M2.4.4 compatibility
 SHQ23-365 Move from Zend_Http to Laminas_Http
 
 
+## 20.7.2 (2025-01-08)
+SHQ23-4085 Update readme. SHQ23-4029 Add order date to place order
+
+

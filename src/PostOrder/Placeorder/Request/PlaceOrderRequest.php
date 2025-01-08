@@ -27,6 +27,7 @@ class PlaceOrderRequest extends AbstractWebServiceRequest implements WebServiceR
     public $carrierCode;
     public $methodCode;
     public $transId;
+    public $orderDate;
     public $recipient;
 
     /**
@@ -35,6 +36,8 @@ class PlaceOrderRequest extends AbstractWebServiceRequest implements WebServiceR
      * @param null $carrierCode
      * @param null $methodCode
      * @param null $transId
+     * @param null $orderDate
+     * @param BasicAddress|null $recipient
      */
     public function __construct(
         $orderNumber = null,
@@ -42,6 +45,7 @@ class PlaceOrderRequest extends AbstractWebServiceRequest implements WebServiceR
         $carrierCode = null,
         $methodCode = null,
         $transId = null,
+        $orderDate = null,
         BasicAddress $recipient = null
     ) {
         $this->orderNumber = $orderNumber;
@@ -49,6 +53,7 @@ class PlaceOrderRequest extends AbstractWebServiceRequest implements WebServiceR
         $this->carrierCode = $carrierCode;
         $this->methodCode = $methodCode;
         $this->transId = $transId;
+        $this->orderDate = $orderDate;
         $this->recipient = $recipient;
     }
 
@@ -135,6 +140,22 @@ class PlaceOrderRequest extends AbstractWebServiceRequest implements WebServiceR
     /**
      * @return mixed
      */
+    public function getOrderDate()
+    {
+        return $this->orderDate;
+    }
+
+    /**
+     * @param mixed $orderDate
+     */
+    public function setOrderDate($orderDate): void
+    {
+        $this->orderDate = $orderDate;
+    }
+
+    /**
+     * @return mixed
+     */
     public function getRecipient()
     {
         return $this->recipient;
@@ -147,6 +168,4 @@ class PlaceOrderRequest extends AbstractWebServiceRequest implements WebServiceR
     {
         $this->recipient = $recipient;
     }
-
-
 }
