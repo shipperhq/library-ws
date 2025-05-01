@@ -1,6 +1,6 @@
 <?php
 /*
- * Shipper HQ
+ * ShipperHQ
  *
  * @category ShipperHQ
  * @package shq
@@ -29,6 +29,7 @@ class PlaceOrderRequest extends AbstractWebServiceRequest implements WebServiceR
     public $transId;
     public $orderDate;
     public $recipient;
+    public $cartPrice;
 
     /**
      * @param null $orderNumber
@@ -38,6 +39,7 @@ class PlaceOrderRequest extends AbstractWebServiceRequest implements WebServiceR
      * @param null $transId
      * @param null $orderDate
      * @param BasicAddress|null $recipient
+     * @param  null $cartPrice
      */
     public function __construct(
         $orderNumber = null,
@@ -46,7 +48,8 @@ class PlaceOrderRequest extends AbstractWebServiceRequest implements WebServiceR
         $methodCode = null,
         $transId = null,
         $orderDate = null,
-        BasicAddress $recipient = null
+        BasicAddress $recipient = null,
+        $cartPrice = null
     ) {
         $this->orderNumber = $orderNumber;
         $this->totalCharges = $totalCharges;
@@ -55,6 +58,7 @@ class PlaceOrderRequest extends AbstractWebServiceRequest implements WebServiceR
         $this->transId = $transId;
         $this->orderDate = $orderDate;
         $this->recipient = $recipient;
+        $this->cartPrice = $cartPrice;
     }
 
     /**
@@ -167,5 +171,20 @@ class PlaceOrderRequest extends AbstractWebServiceRequest implements WebServiceR
     public function setRecipient($recipient): void
     {
         $this->recipient = $recipient;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCartPrice()
+    {
+        return $this->cartPrice;
+    }
+    /**
+     * @param mixed $cartPrice
+     */
+    public function setCartPrice($cartPrice): void
+    {
+        $this->cartPrice = $cartPrice;
     }
 }
