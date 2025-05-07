@@ -1,9 +1,9 @@
 <?php
 /**
- * Shipper HQ
+ * ShipperHQ
  *
  * @category ShipperHQ
- * @package ShipperHQ_WS
+ * @package ShipperHQ\WS
  * @copyright Copyright (c) 2019 Zowta LTD and Zowta LLC (http://www.ShipperHQ.com)
  * @license http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * @author ShipperHQ Team sales@shipperhq.com
@@ -40,16 +40,16 @@ class ShipmentRequest extends AbstractWebServiceRequest implements WebServiceReq
      */
     public function __construct(
         $shipmentList = null,
-        Address $shippingAddress = null,
-        Address $billingAddress = null,
-        ShipmentCustomerDetails $customerDetails = null,
+        ?Address $shippingAddress = null,
+        ?Address $billingAddress = null,
+        ?ShipmentCustomerDetails $customerDetails = null,
         $carrierCode = null,
         $orderNo = null,
         $reserveOrderNo = null,
         $originName = null,
         $methodCode = null
     ) {
-    
+
         $this->shipment = $shipmentList;
         $this->shippingAddress = $shippingAddress;
         $this->billingAddress = $billingAddress;

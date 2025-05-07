@@ -1,9 +1,9 @@
 <?php
 /**
- * Shipper HQ
+ * ShipperHQ
  *
  * @category ShipperHQ
- * @package ShipperHQ_WS
+ * @package ShipperHQ\WS
  * @copyright Copyright (c) 2019 Zowta LTD and Zowta LLC (http://www.ShipperHQ.com)
  * @license http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * @author ShipperHQ Team sales@shipperhq.com
@@ -11,8 +11,8 @@
 
 namespace ShipperHQ\WS\Client;
 
-use Laminas\Http\Client;
-use Laminas\Http\Request;
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\GuzzleException;
 use ShipperHQ\WS\WebServiceRequestInterface;
 
 /**
@@ -47,18 +47,21 @@ class WebServiceClient
 
         try {
             $client = new Client();
-            $client->setUri($webServiceURL);
-            $client->setOptions(['maxredirects' => 0, 'timeout' => $timeout]);
-            $client->setRawBody($jsonRequest);
-            $client->setEncType('application/json');
-            $response = $client->setMethod(Request::METHOD_POST)->send();
+            $response = $client->post($webServiceURL, [
+                'timeout' => $timeout,
+                'headers' => [
+                    'Content-Type' => 'application/json',
+                ],
+                'body' => $jsonRequest
+            ]);
+
             if ($response !== null) {
                 $responseBody = (string) $response->getBody();
             }
 
             $debugData['response'] = $responseBody;
             $responseBody = json_decode($responseBody, false);
-        } catch (\Exception $e) {
+        } catch (GuzzleException $e) {
             $debugData['error'] = ['error' => $e->getMessage(), 'code' => $e->getCode()];
             $debugData['response'] = '';
         }
@@ -104,6 +107,44 @@ class WebServiceClient
             }
 
             $debugData['response'] = $responseBody;
+        } catch (\Exception $e) {
+            $debugData['error'] = ['error' => $e->getMessage(), 'code' => $e->getCode()];
+            $debugData['response'] = '';
+        }
+
+        $result = ['result' => $responseBody, 'debug' => $debugData];
+
+        return $result;
+    }
+
+    public function sendAndReceiveGet(WebServiceRequestInterface $requestObj, $webServiceURL, $timeout = 30)
+    {
+        if (!$requestObj || $requestObj == "") {
+            return ['result' => '', 'debug' => 'Error - Could not create ShipperHQ request'];
+        }
+
+        $jsonRequest = json_encode($requestObj);
+        $debugRequest = $requestObj;
+        if ($debugRequest && $debugRequest->getCredentials() != null) {
+            $debugRequest->credentials->password = null;
+        }
+        $jsonDebugRequest = json_encode($debugRequest, JSON_PRETTY_PRINT);
+        $debugData['json_request'] = $jsonDebugRequest;
+        $debugData['url'] = $webServiceURL;
+        $responseBody = '';
+
+        try {
+            $client = new Client();
+            $client->setUri($webServiceURL);
+            $client->setOptions(['maxredirects' => 0, 'timeout' => $timeout]);
+            $client->setHeaders(['Content-Type' => 'application/json']);
+            $response = $client->setMethod(Request::METHOD_GET)->send();
+            if ($response !== null) {
+                $responseBody = (string) $response->getBody();
+            }
+
+            $debugData['response'] = $responseBody;
+            $responseBody = json_decode($responseBody, false);
         } catch (\Exception $e) {
             $debugData['error'] = ['error' => $e->getMessage(), 'code' => $e->getCode()];
             $debugData['response'] = '';

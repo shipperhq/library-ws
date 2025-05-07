@@ -1,9 +1,9 @@
 <?php
 /**
- * Shipper HQ
+ * ShipperHQ
  *
  * @category ShipperHQ
- * @package ShipperHQ_WS
+ * @package ShipperHQ\WS
  * @copyright Copyright (c) 2019 Zowta LTD and Zowta LLC (http://www.ShipperHQ.com)
  * @license http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * @author ShipperHQ Team sales@shipperhq.com
@@ -39,7 +39,7 @@ class ShipmentAddonRequest extends AbstractWebServiceRequest implements WebServi
         $reserveOrderNo = null,
         $trackinNo = null
     ) {
-    
+
         $this->shipment = $shipmentList;
         $this->carrierCode = $carrierCode;
         $this->orderNo = $orderId;

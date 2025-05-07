@@ -1,9 +1,9 @@
 <?php
 /**
- * Shipper HQ
+ * ShipperHQ
  *
  * @category ShipperHQ
- * @package ShipperHQ_WS
+ * @package ShipperHQ\WS
  * @copyright Copyright (c) 2019 Zowta LTD and Zowta LLC (http://www.ShipperHQ.com)
  * @license http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * @author ShipperHQ Team sales@shipperhq.com
@@ -26,11 +26,9 @@ class Request extends AbstractWebServiceRequest implements WebServiceRequestInte
     public $address;
 
     /**
-     * @param null $cart
-     * @param Address $destination
-     * @param Address $origin
+     * @param Address|null $address
      */
-    public function __construct(Address $address = null)
+    public function __construct(?Address $address = null)
     {
         $this->address = $address;
     }

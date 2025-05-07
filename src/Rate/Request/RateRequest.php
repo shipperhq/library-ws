@@ -1,9 +1,9 @@
 <?php
 /**
- * Shipper HQ
+ * ShipperHQ
  *
  * @category ShipperHQ
- * @package ShipperHQ_WS
+ * @package ShipperHQ\WS
  * @copyright Copyright (c) 2019 Zowta LTD and Zowta LLC (http://www.ShipperHQ.com)
  * @license http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * @author ShipperHQ Team sales@shipperhq.com
@@ -38,22 +38,29 @@ class RateRequest extends AbstractWebServiceRequest implements WebServiceRequest
 
    /**
     * @param null $cart
-    * @param Address $destination
-    * @param Address $origin
+    * @param Address|null $destination
+    * @param CustomerDetails|null $customerDetails
+    * @param string $cartType
+    * @param mixed $validateAddress
+    * @param mixed $carrierId
+    * @param mixed $deliveryDateUTC
+    * @param mixed $deliveryDate
+    * @param mixed $carrierGroupId
+    * @param ShipDetails|null $shipDetails
     */
     public function __construct(
         $cart = null,
-        Address $destination = null,
-        CustomerDetails $customerDetails = null,
+        ?Address $destination = null,
+        ?CustomerDetails $customerDetails = null,
         $cartType = "STD",
         $validateAddress = null,
         $carrierId = null,
         $deliveryDateUTC = null,
         $deliveryDate = null,
         $carrierGroupId = null,
-        ShipDetails $shipDetails = null
+        ?ShipDetails $shipDetails = null
     ) {
-    
+
         $this->cart = $cart;
         $this->destination = $destination;
         $this->customerDetails = $customerDetails;

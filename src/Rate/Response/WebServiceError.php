@@ -1,9 +1,9 @@
 <?php
 /**
- * Shipper HQ
+ * ShipperHQ
  *
  * @category ShipperHQ
- * @package ShipperHQ_WS
+ * @package ShipperHQ\WS
  * @copyright Copyright (c) 2019 Zowta LTD and Zowta LLC (http://www.ShipperHQ.com)
  * @license http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * @author ShipperHQ Team sales@shipperhq.com
@@ -14,72 +14,127 @@ namespace ShipperHQ\WS\Rate\Response;
 /**
  * Class WebServiceError
  *
- * @package ShipperHQ\WS\Response
+ * @package ShipperHQ\WS\Rate\Response
  */
 class WebServiceError
 {
-
-    public $errorCode;
-    public $description;
-    public $errorMessage;
+    /**
+     * @var int
+     */
+    private $errorCode;
 
     /**
-     * @param $description
-     * @param $errorCode
-     * @param $errorMessage
+     * @var string
      */
-    public function __construct($description = "", $errorCode = -1, $errorMessage = "")
-    {
-        $this->description = $description;
-        $this->errorCode = $errorCode;
-        $this->errorMessage = $errorMessage;
-    }
+    private $internalErrorMessage;
 
     /**
-     * @param string $description
+     * @var string
      */
-    public function setDescription($description)
-    {
-        $this->description = $description;
-    }
+    private $externalErrorMessage;
 
     /**
-     * @return string
+     * @var int
      */
-    public function getDescription()
-    {
-        return $this->description;
-    }
+    private $priority = 999;
 
-    /**
-     * @param int $errorCode
-     */
-    public function setErrorCode($errorCode)
+    public function __construct(?int $errorCode = null, ?string $description = null, ?string $errorMessage = null)
     {
-        $this->errorCode = $errorCode;
+        if ($errorCode !== null) {
+            $this->errorCode = $errorCode;
+            $this->internalErrorMessage = $description ?? 'Please contact ShipperHQ for support';
+            $this->externalErrorMessage = $errorMessage ?? 'Unknown Error has Occurred';
+        }
     }
 
     /**
      * @return int
      */
-    public function getErrorCode()
+    public function getErrorCode(): int
     {
         return $this->errorCode;
     }
 
     /**
-     * @param string $errorMessage
+     * @param int $errorCode
      */
-    public function setErrorMessage($errorMessage)
+    public function setErrorCode(int $errorCode): void
     {
-        $this->errorMessage = $errorMessage;
+        $this->errorCode = $errorCode;
     }
 
     /**
      * @return string
      */
-    public function getErrorMessage()
+    public function getInternalErrorMessage(): string
     {
-        return $this->errorMessage;
+        return $this->internalErrorMessage;
+    }
+
+    /**
+     * @param string $internalErrorMessage
+     */
+    public function setInternalErrorMessage(string $internalErrorMessage): void
+    {
+        $this->internalErrorMessage = $internalErrorMessage;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalErrorMessage(): string
+    {
+        return $this->externalErrorMessage;
+    }
+
+    /**
+     * @param string $externalErrorMessage
+     */
+    public function setExternalErrorMessage(string $externalErrorMessage): void
+    {
+        $this->externalErrorMessage = $externalErrorMessage;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPriority(): int
+    {
+        return $this->priority;
+    }
+
+    /**
+     * @param int $priority
+     */
+    public function setPriority(int $priority): void
+    {
+        $this->priority = $priority;
+    }
+
+    /**
+     * @return array
+     */
+    public function toArray(): array
+    {
+        return [
+            'errorCode' => $this->errorCode,
+            'internalErrorMessage' => $this->internalErrorMessage,
+            'externalErrorMessage' => $this->externalErrorMessage,
+            'priority' => $this->priority
+        ];
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString(): string
+    {
+        return sprintf(
+            "WebServiceError{errorCode=%d, internalErrorMessage='%s', externalErrorMessage='%s', priority=%d}",
+            $this->errorCode,
+            $this->internalErrorMessage,
+            $this->externalErrorMessage,
+            $this->priority
+        );
     }
 }

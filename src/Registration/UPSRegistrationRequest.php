@@ -1,9 +1,9 @@
 <?php
 /**
- * Shipper HQ
+ * ShipperHQ
  *
  * @category ShipperHQ
- * @package ShipperHQ_WS
+ * @package ShipperHQ\WS
  * @copyright Copyright (c) 2019 Zowta LTD and Zowta LLC (http://www.ShipperHQ.com)
  * @license http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * @author ShipperHQ Team sales@shipperhq.com
@@ -33,7 +33,7 @@ class UPSRegistrationRequest extends AbstractWebServiceRequest implements WebSer
     public $email;
 
     /**
-     * @param \ShipperHQ\WS\Shared\Address $address
+     * @param \ShipperHQ\WS\Shared\Address|null $address
      * @param null $companyName
      * @param null $customerName
      * @param null $email
@@ -44,7 +44,7 @@ class UPSRegistrationRequest extends AbstractWebServiceRequest implements WebSer
      * @param null $title
      */
     public function __construct(
-        Address $address = null,
+        ?Address $address = null,
         $companyName = null,
         $customerName = null,
         $email = null,
@@ -54,7 +54,7 @@ class UPSRegistrationRequest extends AbstractWebServiceRequest implements WebSer
         $proposedUserName = null,
         $title = null
     ) {
-    
+
         $this->address = $address;
         $this->companyName = $companyName;
         $this->customerName = $customerName;

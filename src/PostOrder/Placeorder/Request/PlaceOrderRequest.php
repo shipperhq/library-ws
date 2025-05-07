@@ -3,7 +3,7 @@
  * ShipperHQ
  *
  * @category ShipperHQ
- * @package shq
+ * @package ShipperHQ\WS
  * @copyright Copyright (c) 2021 Zowta LTD and Zowta LLC (http://www.ShipperHQ.com)
  * @license http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * @author ShipperHQ Team sales@shipperhq.com
@@ -48,7 +48,7 @@ class PlaceOrderRequest extends AbstractWebServiceRequest implements WebServiceR
         $methodCode = null,
         $transId = null,
         $orderDate = null,
-        BasicAddress $recipient = null,
+        ?BasicAddress $recipient = null,
         $cartPrice = null
     ) {
         $this->orderNumber = $orderNumber;

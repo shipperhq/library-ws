@@ -1,9 +1,9 @@
 <?php
 /**
- * Shipper HQ
+ * ShipperHQ
  *
  * @category ShipperHQ
- * @package ShipperHQ_WS
+ * @package ShipperHQ\WS
  * @copyright Copyright (c) 2019 Zowta LTD and Zowta LLC (http://www.ShipperHQ.com)
  * @license http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * @author ShipperHQ Team sales@shipperhq.com
@@ -24,10 +24,10 @@ abstract class AbstractWebServiceResponse implements WebServiceResponseInterface
     public $responseSummary;
 
     /**
-     * @param ResponseSummary $responseSummary
+     * @param ResponseSummary|null $responseSummary
      * @param array $errors
      */
-    public function __construct(ResponseSummary $responseSummary = null, array $errors = [])
+    public function __construct(?ResponseSummary $responseSummary = null, array $errors = [])
     {
         $this->responseSummary = $responseSummary;
         $this->errors = $errors;

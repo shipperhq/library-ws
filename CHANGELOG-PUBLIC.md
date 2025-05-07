@@ -30,3 +30,7 @@ SHQ23-4085 Update readme. SHQ23-4029 Add order date to place order
 SHQ23-4490 Add cartPrice optionally to createOrder mutation
 
 
+## 20.9.0 (2025-05-07)
+SHQ23-4531 Add response and allowed methods entities
+
+

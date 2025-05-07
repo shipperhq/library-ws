@@ -1,8 +1,8 @@
 {
     "name": "shipperhq/library-ws",
     "description": "ShipperHQ WS Library",
-    "type": "magento2-library",
-    "version": "20.8.0",
+    "type": "library",
+    "version": "20.9.0",
     "license": [
         "OSL-3.0",
         "AFL-3.0"
@@ -18,7 +18,7 @@
         }
     ],
     "require": {
-        "laminas/laminas-http": "~2.0"
+        "guzzlehttp/guzzle": "^7.0"
     },
     "support": {
         "documentation": "http://docs.shipperhq.com"
