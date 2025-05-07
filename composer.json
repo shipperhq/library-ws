@@ -2,7 +2,7 @@
     "name": "shipperhq/library-ws",
     "description": "ShipperHQ WS Library",
     "type": "library",
-    "version": "20.9.0",
+    "version": "20.9.1",
     "license": [
         "OSL-3.0",
         "AFL-3.0"
@@ -24,9 +24,6 @@
         "documentation": "http://docs.shipperhq.com"
     },
     "autoload": {
-        "files": [
-            "src/registration.php"
-        ],
         "psr-4": {
             "ShipperHQ\\WS\\": "src/"
         }
