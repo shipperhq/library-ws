@@ -38,3 +38,7 @@ SHQ23-4531 Add response and allowed methods entities
 SHQ23-4531 Remove autoload registration file
 
 
+## 20.9.2 (2025-06-25)
+SHQ23-5236 Ensure selected options can never be null
+
+

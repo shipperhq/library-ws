@@ -20,21 +20,24 @@ class SelectedOptions
 
     public $options;
 
+    /**
+     * @param array|null $options
+     */
     public function __construct($options = null)
     {
-        $this->options = $options;
+        $this->options = $options === null ? [] : $options;
     }
 
     /**
-     * @param null $options
+     * @param array|null $options
      */
     public function setOptions($options)
     {
-        $this->options = $options;
+        $this->options = $options === null ? [] : $options;
     }
 
     /**
-     * @return null
+     * @return array
      */
     public function getOptions()
     {
