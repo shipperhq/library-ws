@@ -11,10 +11,9 @@
 
 namespace ShipperHQ\WS\Rate\Request;
 
-use \ShipperHQ\WS\Shared\Address;
-use \ShipperHQ\WS\Rate\Request;
-use \ShipperHQ\WS\AbstractWebServiceRequest;
-use \ShipperHQ\WS\WebServiceRequestInterface;
+use ShipperHQ\WS\AbstractWebServiceRequest;
+use ShipperHQ\WS\Shared\Address;
+use ShipperHQ\WS\WebServiceRequestInterface;
 
 /**
  * Class RateRequest
@@ -36,18 +35,18 @@ class RateRequest extends AbstractWebServiceRequest implements WebServiceRequest
     public $carrierCode;
     public $validateAddress;
 
-   /**
-    * @param null $cart
-    * @param Address|null $destination
-    * @param CustomerDetails|null $customerDetails
-    * @param string $cartType
-    * @param mixed $validateAddress
-    * @param mixed $carrierId
-    * @param mixed $deliveryDateUTC
-    * @param mixed $deliveryDate
-    * @param mixed $carrierGroupId
-    * @param ShipDetails|null $shipDetails
-    */
+    /**
+     * @param null $cart
+     * @param Address|null $destination
+     * @param CustomerDetails|null $customerDetails
+     * @param string $cartType
+     * @param mixed $validateAddress
+     * @param mixed $carrierId
+     * @param mixed $deliveryDateUTC
+     * @param mixed $deliveryDate
+     * @param mixed $carrierGroupId
+     * @param ShipDetails|null $shipDetails
+     */
     public function __construct(
         $cart = null,
         ?Address $destination = null,
@@ -89,49 +88,49 @@ class RateRequest extends AbstractWebServiceRequest implements WebServiceRequest
         return $this->deliveryDate;
     }
 
-   /**
-    * @param mixed $cart
-    */
+    /**
+     * @param mixed $cart
+     */
     public function setCart($cart)
     {
         $this->cart = $cart;
     }
 
-   /**
-    * @return mixed
-    */
+    /**
+     * @return mixed
+     */
     public function getCart()
     {
         return $this->cart;
     }
 
-   /**
-    * @param Address $destination
-    */
+    /**
+     * @param Address $destination
+     */
     public function setDestination(Address $destination)
     {
         $this->destination = $destination;
     }
 
-   /**
-    * @return Address
-    */
+    /**
+     * @return Address
+     */
     public function getDestination()
     {
         return $this->destination;
     }
 
-   /**
-    * @param CustomerDetails $customerDetails
-    */
+    /**
+     * @param CustomerDetails $customerDetails
+     */
     public function setCustomerDetails(CustomerDetails $customerDetails)
     {
         $this->customerDetails = $customerDetails;
     }
 
-   /**
-    * @return CustomerDetails
-    */
+    /**
+     * @return CustomerDetails
+     */
     public function getCustomerDetails()
     {
         return $this->customerDetails;

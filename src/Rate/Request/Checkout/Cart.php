@@ -22,14 +22,14 @@ class Cart
     public $freeShipping;
     public $items;
 
-   /**
-    * @param float $declaredValue
-    * @param boolean $freeShipping
-    * @param array $items
-    * @param float $price
-    * @param int $qty
-    * @param float $weight
-    */
+    /**
+     * @param float $declaredValue
+     * @param boolean $freeShipping
+     * @param array $items
+     * @param float $price
+     * @param int $qty
+     * @param float $weight
+     */
     public function __construct(
         $declaredValue = 0.0,
         $freeShipping = false,
@@ -44,49 +44,49 @@ class Cart
         $this->items = $items;
     }
 
-   /**
-    * @param float $declaredValue
-    */
+    /**
+     * @param float $declaredValue
+     */
     public function setDeclaredValue($declaredValue)
     {
         $this->declaredValue = $declaredValue;
     }
 
-   /**
-    * @return float
-    */
+    /**
+     * @return float
+     */
     public function getDeclaredValue()
     {
         return $this->declaredValue;
     }
 
-   /**
-    * @param boolean $freeShipping
-    */
+    /**
+     * @param boolean $freeShipping
+     */
     public function setFreeShipping($freeShipping)
     {
         $this->freeShipping = $freeShipping;
     }
 
-   /**
-    * @return boolean
-    */
+    /**
+     * @return boolean
+     */
     public function getFreeShipping()
     {
         return $this->freeShipping;
     }
 
-   /**
-    * @param array $items
-    */
+    /**
+     * @param array $items
+     */
     public function setItems(array $items)
     {
         $this->items = $items;
     }
 
-   /**
-    * @return array
-    */
+    /**
+     * @return array
+     */
     public function getItems()
     {
         return $this->items;

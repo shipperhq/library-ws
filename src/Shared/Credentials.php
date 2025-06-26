@@ -20,44 +20,43 @@ class Credentials
     public $password;
     public $apiKey;
 
-   /**
-    * @param null $apiKey
-    * @param null $password
-    * @param null $userId
-    */
-    public function __construct($apiKey = null, $password = null)
+    /**
+     * @param string|null $apiKey
+     * @param string|null $password
+     */
+    public function __construct(?string $apiKey = null, ?string $password = null)
     {
         $this->apiKey = $apiKey;
         $this->password = $password;
     }
 
-   /**
-    * @param mixed $apiKey
-    */
+    /**
+     * @param mixed $apiKey
+     */
     public function setApiKey($apiKey)
     {
         $this->apiKey = $apiKey;
     }
 
-   /**
-    * @return mixed
-    */
+    /**
+     * @return mixed
+     */
     public function getApiKey()
     {
         return $this->apiKey;
     }
 
-   /**
-    * @param mixed $password
-    */
+    /**
+     * @param mixed $password
+     */
     public function setPassword($password)
     {
         $this->password = $password;
     }
 
-   /**
-    * @return mixed
-    */
+    /**
+     * @return mixed
+     */
     public function getPassword()
     {
         return $this->password;

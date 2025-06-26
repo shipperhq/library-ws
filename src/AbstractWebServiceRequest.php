@@ -11,8 +11,6 @@
 
 namespace ShipperHQ\WS;
 
-use \ShipperHQ\WS\WebServiceRequestInterface;
-
 /**
  * Class AbstractWebServiceRequest
  *
@@ -24,33 +22,33 @@ abstract class AbstractWebServiceRequest implements WebServiceRequestInterface
     public $credentials;
     public $siteDetails;
 
-   /**
-    * @return mixed
-    */
+    /**
+     * @return mixed
+     */
     public function getCredentials()
     {
         return $this->credentials;
     }
 
-   /**
-    * @param \ShipperHQ\WS\Shared\Credentials $credentials
-    */
+    /**
+     * @param \ShipperHQ\WS\Shared\Credentials $credentials
+     */
     public function setCredentials(\ShipperHQ\WS\Shared\Credentials $credentials)
     {
         $this->credentials = $credentials;
     }
 
-   /**
-    * @return mixed
-    */
+    /**
+     * @return mixed
+     */
     public function getSiteDetails()
     {
         return $this->siteDetails;
     }
 
-   /**
-    * @param \ShipperHQ\WS\Shared\SiteDetails $siteDetails
-    */
+    /**
+     * @param \ShipperHQ\WS\Shared\SiteDetails $siteDetails
+     */
     public function setSiteDetails(\ShipperHQ\WS\Shared\SiteDetails $siteDetails)
     {
         $this->siteDetails = $siteDetails;

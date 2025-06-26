@@ -24,16 +24,16 @@ class Address extends BasicAddress
     public $familyName;
     public $telNo;
 
-   /**
-    * @param null $accessorials
-    * @param null $city
-    * @param null $country
-    * @param null $region
-    * @param null $street
-    * @param null $street2
-    * @param null $zipcode
-    * @param null $selectedOptions
-    */
+    /**
+     * @param null $accessorials
+     * @param null $city
+     * @param null $country
+     * @param null $region
+     * @param null $street
+     * @param null $street2
+     * @param null $zipcode
+     * @param null $selectedOptions
+     */
     public function __construct(
         $accessorials = null,
         $city = null,
@@ -48,7 +48,7 @@ class Address extends BasicAddress
         $telephone = null,
         $selectedOptions = null
     ) {
-        parent::__construct($city,$country, $region, $street, $street2, $zipcode);
+        parent::__construct($city, $country, $region, $street, $street2, $zipcode);
         $this->accessorials = $accessorials;
         $this->email = $email;
         $this->givenName = $firstName;
@@ -57,17 +57,17 @@ class Address extends BasicAddress
         $this->selectedOptions = $selectedOptions;
     }
 
-   /**
-    * @param Accessorials $accessorials
-    */
+    /**
+     * @param Accessorials $accessorials
+     */
     public function setSelectedOptions($selectedOptions)
     {
         $this->selectedOptions = $selectedOptions;
     }
 
-   /**
-    * @return Accessorials
-    */
+    /**
+     * @return Accessorials
+     */
     public function getSelectedOptions()
     {
         return $this->selectedOptions;

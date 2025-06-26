@@ -36,17 +36,17 @@ class Accessorials
         $this->insideDelivery = $insideDelivery;
     }
 
-   /**
-    * @param mixed $liftgateRequired
-    */
+    /**
+     * @param mixed $liftgateRequired
+     */
     public function setLiftgateRequired($liftgateRequired)
     {
         $this->liftgateRequired = $liftgateRequired;
     }
 
-   /**
-    * @return mixed
-    */
+    /**
+     * @return mixed
+     */
     public function getLiftgateRequired()
     {
         return $this->liftgateRequired;

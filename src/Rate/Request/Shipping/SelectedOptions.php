@@ -23,7 +23,7 @@ class SelectedOptions
     /**
      * @param array|null $options
      */
-    public function __construct($options = null)
+    public function __construct(?array $options = null)
     {
         $this->options = $options === null ? [] : $options;
     }
@@ -31,7 +31,7 @@ class SelectedOptions
     /**
      * @param array|null $options
      */
-    public function setOptions($options)
+    public function setOptions(?array $options): void
     {
         $this->options = $options === null ? [] : $options;
     }
@@ -39,7 +39,7 @@ class SelectedOptions
     /**
      * @return array
      */
-    public function getOptions()
+    public function getOptions(): array
     {
         return $this->options;
     }

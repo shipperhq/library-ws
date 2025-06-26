@@ -51,37 +51,37 @@ class Item
     public $pickupLocationDetails;
     public $defaultWarehouseStockDetail;
 
-   /**
-    * @param array $items
-    * @param int $qty
-    * @param float $weight
-    * @param int $rowTotal
-    * @param float $basePrice
-    * @param float $baseRowTotal
-    * @param float $discountAmount
-    * @param float $discountPercent
-    * @param float $discountedBasePrice
-    * @param float $discountedStorePrice
-    * @param float $discountedTaxInclBasePrice
-    * @param float $discountedTaxInclStorePrice
-    * @param bool $fixedPrice
-    * @param float $fixedWeight
-    * @param float $freeMethodWeight
-    * @param bool $freeShipping
-    * @param int $id
-    * @param string $name
-    * @param string $packageCurrency
-    * @param string $baseCurrency
-    * @param string $storeBaseCurrency
-    * @param string $storeCurrentCurrency
-    * @param float $storePrice
-    * @param float $taxInclBasePrice
-    * @param float $taxInclStorePrice
-    * @param float $taxPercentage
-    * @param string $type
-    * @param array $attributes
-    * @param array $additionalAttributes
-    */
+    /**
+     * @param array $items
+     * @param int $qty
+     * @param float $weight
+     * @param int $rowTotal
+     * @param float $basePrice
+     * @param float $baseRowTotal
+     * @param float $discountAmount
+     * @param float $discountPercent
+     * @param float $discountedBasePrice
+     * @param float $discountedStorePrice
+     * @param float $discountedTaxInclBasePrice
+     * @param float $discountedTaxInclStorePrice
+     * @param bool $fixedPrice
+     * @param float $fixedWeight
+     * @param float $freeMethodWeight
+     * @param bool $freeShipping
+     * @param int $id
+     * @param string $name
+     * @param string $packageCurrency
+     * @param string $baseCurrency
+     * @param string $storeBaseCurrency
+     * @param string $storeCurrentCurrency
+     * @param float $storePrice
+     * @param float $taxInclBasePrice
+     * @param float $taxInclStorePrice
+     * @param float $taxPercentage
+     * @param string $type
+     * @param array $attributes
+     * @param array $additionalAttributes
+     */
     public function __construct(
         $id = 0,
         $sku = "",
@@ -147,497 +147,497 @@ class Item
         $this->pickupLocationDetails = $pickupLocationDetails;
     }
 
-   /**
-    * @return int
-    */
+    /**
+     * @return int
+     */
     public function getId()
     {
         return $this->id;
     }
 
-   /**
-    * @param int $id
-    */
+    /**
+     * @param int $id
+     */
     public function setId($id)
     {
         $this->id = $id;
     }
 
-   /**
-    * @return string
-    */
+    /**
+     * @return string
+     */
     public function getSku()
     {
         return $this->sku;
     }
 
-   /**
-    * @param string $sku
-    */
+    /**
+     * @param string $sku
+     */
     public function setSku($sku)
     {
         $this->sku = $sku;
     }
 
-   /**
-    * @return int
-    */
+    /**
+     * @return int
+     */
     public function getQty()
     {
         return $this->qty;
     }
 
-   /**
-    * @param int $qty
-    */
+    /**
+     * @param int $qty
+     */
     public function setQty($qty)
     {
         $this->qty = $qty;
     }
 
-   /**
-    * @return float
-    */
+    /**
+     * @return float
+     */
     public function getWeight()
     {
         return $this->weight;
     }
 
-   /**
-    * @param float $weight
-    */
+    /**
+     * @param float $weight
+     */
     public function setWeight($weight)
     {
         $this->weight = $weight;
     }
 
-   /**
-    * @return int
-    */
+    /**
+     * @return int
+     */
     public function getRowTotal()
     {
         return $this->rowTotal;
     }
 
-   /**
-    * @param int $rowTotal
-    */
+    /**
+     * @param int $rowTotal
+     */
     public function setRowTotal($rowTotal)
     {
         $this->rowTotal = $rowTotal;
     }
 
-   /**
-    * @return float
-    */
+    /**
+     * @return float
+     */
     public function getBasePrice()
     {
         return $this->basePrice;
     }
 
-   /**
-    * @param float $basePrice
-    */
+    /**
+     * @param float $basePrice
+     */
     public function setBasePrice($basePrice)
     {
         $this->basePrice = $basePrice;
     }
 
-   /**
-    * @return float
-    */
+    /**
+     * @return float
+     */
     public function getStorePrice()
     {
         return $this->storePrice;
     }
 
-   /**
-    * @param float $storePrice
-    */
+    /**
+     * @param float $storePrice
+     */
     public function setStorePrice($storePrice)
     {
         $this->storePrice = $storePrice;
     }
 
-   /**
-    * @return float
-    */
+    /**
+     * @return float
+     */
     public function getTaxInclBasePrice()
     {
         return $this->taxInclBasePrice;
     }
 
-   /**
-    * @param float $taxInclBasePrice
-    */
+    /**
+     * @param float $taxInclBasePrice
+     */
     public function setTaxInclBasePrice($taxInclBasePrice)
     {
         $this->taxInclBasePrice = $taxInclBasePrice;
     }
 
-   /**
-    * @return float
-    */
+    /**
+     * @return float
+     */
     public function getTaxInclStorePrice()
     {
         return $this->taxInclStorePrice;
     }
 
-   /**
-    * @param float $taxInclStorePrice
-    */
+    /**
+     * @param float $taxInclStorePrice
+     */
     public function setTaxInclStorePrice($taxInclStorePrice)
     {
         $this->taxInclStorePrice = $taxInclStorePrice;
     }
 
-   /**
-    * @return float
-    */
+    /**
+     * @return float
+     */
     public function getBaseRowTotal()
     {
         return $this->baseRowTotal;
     }
 
-   /**
-    * @param float $baseRowTotal
-    */
+    /**
+     * @param float $baseRowTotal
+     */
     public function setBaseRowTotal($baseRowTotal)
     {
         $this->baseRowTotal = $baseRowTotal;
     }
 
-   /**
-    * @return float
-    */
+    /**
+     * @return float
+     */
     public function getDiscountPercent()
     {
         return $this->discountPercent;
     }
 
-   /**
-    * @param float $discountPercent
-    */
+    /**
+     * @param float $discountPercent
+     */
     public function setDiscountPercent($discountPercent)
     {
         $this->discountPercent = $discountPercent;
     }
 
-   /**
-    * @return float
-    */
+    /**
+     * @return float
+     */
     public function getDiscountedBasePrice()
     {
         return $this->discountedBasePrice;
     }
 
-   /**
-    * @param float $discountedBasePrice
-    */
+    /**
+     * @param float $discountedBasePrice
+     */
     public function setDiscountedBasePrice($discountedBasePrice)
     {
         $this->discountedBasePrice = $discountedBasePrice;
     }
 
-   /**
-    * @return float
-    */
+    /**
+     * @return float
+     */
     public function getDiscountedStorePrice()
     {
         return $this->discountedStorePrice;
     }
 
-   /**
-    * @param float $discountedStorePrice
-    */
+    /**
+     * @param float $discountedStorePrice
+     */
     public function setDiscountedStorePrice($discountedStorePrice)
     {
         $this->discountedStorePrice = $discountedStorePrice;
     }
 
-   /**
-    * @return float
-    */
+    /**
+     * @return float
+     */
     public function getDiscountedTaxInclBasePrice()
     {
         return $this->discountedTaxInclBasePrice;
     }
 
-   /**
-    * @param float $discountedTaxInclBasePrice
-    */
+    /**
+     * @param float $discountedTaxInclBasePrice
+     */
     public function setDiscountedTaxInclBasePrice($discountedTaxInclBasePrice)
     {
         $this->discountedTaxInclBasePrice = $discountedTaxInclBasePrice;
     }
 
-   /**
-    * @return float
-    */
+    /**
+     * @return float
+     */
     public function getDiscountedTaxInclStorePrice()
     {
         return $this->discountedTaxInclStorePrice;
     }
 
-   /**
-    * @param float $discountedTaxInclStorePrice
-    */
+    /**
+     * @param float $discountedTaxInclStorePrice
+     */
     public function setDiscountedTaxInclStorePrice($discountedTaxInclStorePrice)
     {
         $this->discountedTaxInclStorePrice = $discountedTaxInclStorePrice;
     }
 
-   /**
-    * @return boolean
-    */
+    /**
+     * @return boolean
+     */
     public function isFixedPrice()
     {
         return $this->fixedPrice;
     }
 
-   /**
-    * @param boolean $fixedPrice
-    */
+    /**
+     * @param boolean $fixedPrice
+     */
     public function setFixedPrice($fixedPrice)
     {
         $this->fixedPrice = $fixedPrice;
     }
 
-   /**
-    * @return float
-    */
+    /**
+     * @return float
+     */
     public function getFixedWeight()
     {
         return $this->fixedWeight;
     }
 
-   /**
-    * @param float $fixedWeight
-    */
+    /**
+     * @param float $fixedWeight
+     */
     public function setFixedWeight($fixedWeight)
     {
         $this->fixedWeight = $fixedWeight;
     }
 
-   /**
-    * @return float
-    */
+    /**
+     * @return float
+     */
     public function getDiscountAmount()
     {
         return $this->discountAmount;
     }
 
-   /**
-    * @param float $discountAmount
-    */
+    /**
+     * @param float $discountAmount
+     */
     public function setDiscountAmount($discountAmount)
     {
         $this->discountAmount = $discountAmount;
     }
 
-   /**
-    * @return array
-    */
+    /**
+     * @return array
+     */
     public function getAttributes()
     {
         return $this->attributes;
     }
 
-   /**
-    * @param array $attributes
-    */
+    /**
+     * @param array $attributes
+     */
     public function setAttributes($attributes)
     {
         $this->attributes = $attributes;
     }
 
-   /**
-    * @return string
-    */
+    /**
+     * @return string
+     */
     public function getBaseCurrency()
     {
         return $this->baseCurrency;
     }
 
-   /**
-    * @param string $baseCurrency
-    */
+    /**
+     * @param string $baseCurrency
+     */
     public function setBaseCurrency($baseCurrency)
     {
         $this->baseCurrency = $baseCurrency;
     }
 
-   /**
-    * @return string
-    */
+    /**
+     * @return string
+     */
     public function getPackageCurrency()
     {
         return $this->packageCurrency;
     }
 
-   /**
-    * @param string $packageCurrency
-    */
+    /**
+     * @param string $packageCurrency
+     */
     public function setPackageCurrency($packageCurrency)
     {
         $this->packageCurrency = $packageCurrency;
     }
 
-   /**
-    * @return string
-    */
+    /**
+     * @return string
+     */
     public function getStoreBaseCurrency()
     {
         return $this->storeBaseCurrency;
     }
 
-   /**
-    * @param string $storeBaseCurrency
-    */
+    /**
+     * @param string $storeBaseCurrency
+     */
     public function setStoreBaseCurrency($storeBaseCurrency)
     {
         $this->storeBaseCurrency = $storeBaseCurrency;
     }
 
-   /**
-    * @return string
-    */
+    /**
+     * @return string
+     */
     public function getStoreCurrentCurrency()
     {
         return $this->storeCurrentCurrency;
     }
 
-   /**
-    * @param string $storeCurrentCurrency
-    */
+    /**
+     * @param string $storeCurrentCurrency
+     */
     public function setStoreCurrentCurrency($storeCurrentCurrency)
     {
         $this->storeCurrentCurrency = $storeCurrentCurrency;
     }
 
-   /**
-    * @return float
-    */
+    /**
+     * @return float
+     */
     public function getTaxPercentage()
     {
         return $this->taxPercentage;
     }
 
-   /**
-    * @param float $taxPercentage
-    */
+    /**
+     * @param float $taxPercentage
+     */
     public function setTaxPercentage($taxPercentage)
     {
         $this->taxPercentage = $taxPercentage;
     }
 
-   /**
-    * @return boolean
-    */
+    /**
+     * @return boolean
+     */
     public function isFreeShipping()
     {
         return $this->freeShipping;
     }
 
-   /**
-    * @param boolean $freeShipping
-    */
+    /**
+     * @param boolean $freeShipping
+     */
     public function setFreeShipping($freeShipping)
     {
         $this->freeShipping = $freeShipping;
     }
 
-   /**
-    * @return string
-    */
+    /**
+     * @return string
+     */
     public function getType()
     {
         return $this->type;
     }
 
-   /**
-    * @param string $type
-    */
+    /**
+     * @param string $type
+     */
     public function setType($type)
     {
         $this->type = $type;
     }
 
-   /**
-    * @return array
-    */
+    /**
+     * @return array
+     */
     public function getItems()
     {
         return $this->items;
     }
 
-   /**
-    * @param array $items
-    */
+    /**
+     * @param array $items
+     */
     public function setItems($items)
     {
         $this->items = $items;
     }
 
-   /**
-    * @return array
-    */
+    /**
+     * @return array
+     */
     public function getAdditionalAttributes()
     {
         return $this->additionalAttributes;
     }
 
-   /**
-    * @param array $additionalAttributes
-    */
+    /**
+     * @param array $additionalAttributes
+     */
     public function setAdditionalAttributes($additionalAttributes)
     {
         $this->additionalAttributes = $additionalAttributes;
     }
 
-   /**
-    * @return array
-    */
+    /**
+     * @return array
+     */
     public function getWarehouseDetails()
     {
         return $this->warehouseDetails;
     }
 
-   /**
-    * @param array $warehouseDetails
-    */
+    /**
+     * @param array $warehouseDetails
+     */
     public function setWarehouseDetails($warehouseDetails)
     {
         $this->warehouseDetails = $warehouseDetails;
     }
 
-   /**
-    * @return array
-    */
+    /**
+     * @return array
+     */
     public function getPickupLocationDetails()
     {
         return $this->pickupLocationDetails;
     }
 
-   /**
-    * @param array $pickupLocationDetails
-    */
+    /**
+     * @param array $pickupLocationDetails
+     */
     public function setPickupLocationDetails($pickupLocationDetails)
     {
         $this->pickupLocationDetails = $pickupLocationDetails;
     }
 
-   /**
-    * @return mixed
-    */
+    /**
+     * @return mixed
+     */
     public function getDefaultWarehouseStockDetail()
     {
         return $this->defaultWarehouseStockDetail;
     }
 
-   /**
-    * @param mixed $defaultWarehouseStockDetail
-    */
+    /**
+     * @param mixed $defaultWarehouseStockDetail
+     */
     public function setDefaultWarehouseStockDetail($defaultWarehouseStockDetail)
     {
         $this->defaultWarehouseStockDetail = $defaultWarehouseStockDetail;

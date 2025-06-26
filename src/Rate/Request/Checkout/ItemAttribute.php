@@ -21,43 +21,43 @@ class ItemAttribute
     public $name;
     public $value;
 
-   /**
-    * @param string $name
-    * @param string $value
-    */
+    /**
+     * @param string $name
+     * @param string $value
+     */
     public function __construct($name = "", $value = "")
     {
         $this->name = $name;
         $this->value = $value;
     }
 
-   /**
-    * @param string $name
-    */
+    /**
+     * @param string $name
+     */
     public function setName($name)
     {
         $this->name = $name;
     }
 
-   /**
-    * @return string
-    */
+    /**
+     * @return string
+     */
     public function getName()
     {
         return $this->name;
     }
 
-   /**
-    * @param string $value
-    */
+    /**
+     * @param string $value
+     */
     public function setValue($value)
     {
         $this->value = $value;
     }
 
-   /**
-    * @return string
-    */
+    /**
+     * @return string
+     */
     public function getValue()
     {
         return $this->value;

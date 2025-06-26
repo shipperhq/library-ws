@@ -24,7 +24,7 @@ class StockDetail
 
     public $inStock;
 
-    public function __construct($inventoryCount = null, $availabilityDate = null, $inStock = null)
+    public function __construct(?int $inventoryCount = null, ?string $availabilityDate = null, ?bool $inStock = null)
     {
         $this->inventoryCount = $inventoryCount;
         $this->availabilityDate = $availabilityDate;
@@ -34,7 +34,7 @@ class StockDetail
     /**
      * @return null
      */
-    public function getInventoryCount()
+    public function getInventoryCount(): ?int
     {
         return $this->inventoryCount;
     }
@@ -42,7 +42,7 @@ class StockDetail
     /**
      * @param null $inventoryCount
      */
-    public function setInventoryCount($inventoryCount)
+    public function setInventoryCount(?int $inventoryCount): void
     {
         $this->inventoryCount = $inventoryCount;
     }
@@ -50,7 +50,7 @@ class StockDetail
     /**
      * @return null
      */
-    public function getAvailabilityDate()
+    public function getAvailabilityDate(): ?string
     {
         return $this->availabilityDate;
     }
@@ -58,7 +58,7 @@ class StockDetail
     /**
      * @param null $availabilityDate
      */
-    public function setAvailabilityDate($availabilityDate)
+    public function setAvailabilityDate(?string $availabilityDate): void
     {
         $this->availabilityDate = $availabilityDate;
     }
@@ -66,7 +66,7 @@ class StockDetail
     /**
      * @return null
      */
-    public function getInStock()
+    public function getInStock(): ?bool
     {
         return $this->inStock;
     }
@@ -74,7 +74,7 @@ class StockDetail
     /**
      * @param null $inStock
      */
-    public function setInStock($inStock)
+    public function setInStock(?bool $inStock): void
     {
         $this->inStock = $inStock;
     }

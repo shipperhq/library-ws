@@ -42,3 +42,7 @@ SHQ23-4531 Remove autoload registration file
 SHQ23-5236 Ensure selected options can never be null
 
 
+## 20.10.0 (2025-06-26)
+SHQ23-5319 Add return types and fix copyright and ensure php 8.4 compatibility
+
+

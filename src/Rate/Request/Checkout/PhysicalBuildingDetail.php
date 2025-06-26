@@ -20,7 +20,7 @@ class PhysicalBuildingDetail extends StockDetail
 
     public $name;
 
-    public function __construct($name = null, $inventoryCount = null, $availabilityDate = null, $inStock = null)
+    public function __construct(?string $name = null, ?int $inventoryCount = null, ?string $availabilityDate = null, ?bool $inStock = null)
     {
         $this->name = $name;
         parent::__construct($inventoryCount, $availabilityDate, $inStock);
@@ -29,7 +29,7 @@ class PhysicalBuildingDetail extends StockDetail
     /**
      * @return null
      */
-    public function getName()
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -37,7 +37,7 @@ class PhysicalBuildingDetail extends StockDetail
     /**
      * @param null $name
      */
-    public function setName($name)
+    public function setName(?string $name): void
     {
         $this->name = $name;
     }

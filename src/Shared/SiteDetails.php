@@ -54,49 +54,49 @@ class SiteDetails
         $this->ipAddress = $ipAddress;
     }
 
-   /**
-    * @param mixed $ecommerceCart
-    */
+    /**
+     * @param mixed $ecommerceCart
+     */
     public function setEcommerceCart($ecommerceCart)
     {
         $this->ecommerceCart = $ecommerceCart;
     }
 
-   /**
-    * @return mixed
-    */
+    /**
+     * @return mixed
+     */
     public function getEcommerceCart()
     {
         return $this->ecommerceCart;
     }
 
-   /**
-    * @param mixed $ecommerceVersion
-    */
+    /**
+     * @param mixed $ecommerceVersion
+     */
     public function setEcommerceVersion($ecommerceVersion)
     {
         $this->ecommerceVersion = $ecommerceVersion;
     }
 
-   /**
-    * @return mixed
-    */
+    /**
+     * @return mixed
+     */
     public function getEcommerceVersion()
     {
         return $this->ecommerceVersion;
     }
 
-   /**
-    * @param mixed $websiteUrl
-    */
+    /**
+     * @param mixed $websiteUrl
+     */
     public function setWebsiteUrl($websiteUrl)
     {
         $this->websiteUrl = $websiteUrl;
     }
 
-   /**
-    * @return mixed
-    */
+    /**
+     * @return mixed
+     */
     public function getWebsiteUrl()
     {
         return $this->websiteUrl;

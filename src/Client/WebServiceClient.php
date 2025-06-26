@@ -72,8 +72,9 @@ class WebServiceClient
     }
 
     /**
-     * @param \ShipperHQ\WS\WebServiceRequest $requestObj
-     * @param $webServicePath
+     * @param WebServiceRequestInterface $requestObj
+     * @param $webServiceURL
+     * @param int $timeout
      * @return mixed|null
      */
     public function sendAndReceiveWp(WebServiceRequestInterface $requestObj, $webServiceURL, $timeout = 30)

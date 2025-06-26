@@ -20,10 +20,10 @@ class CustomerGroup
     public $name;
     public $description;
 
-   /**
-    * @param null $customerGroup
-    */
-    public function __construct($name = null, $description = null)
+    /**
+     * @param null $customerGroup
+     */
+    public function __construct(?string $name = null, ?string $description = null)
     {
         $this->name = $name;
         $this->description = $description;
