@@ -46,3 +46,7 @@ SHQ23-5236 Ensure selected options can never be null
 SHQ23-5319 Add return types and fix copyright and ensure php 8.4 compatibility
 
 
+## 20.10.1 (2025-11-06)
+INFRA-1328 - Removed incorrect case-sensitive version of file
+
+
