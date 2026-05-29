@@ -15,7 +15,7 @@ namespace ShipperHQ\WS\Rate\Response;
 
 /**
  * Class GlobalSettings
- * @package ShipperHQ\WS\Rate\Response
+ * @package ShipperHQ\WS
  */
 class GlobalSettings
 {

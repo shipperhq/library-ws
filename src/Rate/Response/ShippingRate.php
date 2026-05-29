@@ -13,11 +13,9 @@
 
 namespace ShipperHQ\WS\Rate\Response;
 
-use ShipperHQ\WS\Rate\Response\Shipping\Carrier\Shipment;
-
 /**
  * Class ShippingRate
- * @package ShipperHQ\WS\Rate\Response
+ * @package ShipperHQ\WS
  */
 class ShippingRate
 {

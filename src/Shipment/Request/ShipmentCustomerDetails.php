@@ -13,7 +13,7 @@ namespace ShipperHQ\WS\Shipment\Request;
 /**
  * Class CustomerDetails
  *
- * @package ShipperHQ\WS\Request\Rate
+ * @package ShipperHQ\WS
  */
 class ShipmentCustomerDetails
 {

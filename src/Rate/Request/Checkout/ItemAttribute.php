@@ -13,7 +13,7 @@ namespace ShipperHQ\WS\Rate\Request\Checkout;
 /**
  * Class ItemAttribute
  *
- * @package ShipperHQ\Checkout
+ * @package ShipperHQ\WS
  */
 class ItemAttribute
 {

@@ -13,7 +13,7 @@ namespace ShipperHQ\WS\Rate\Request;
 /**
  * Class CustomerGroup
  *
- * @package ShipperHQ\WS\Request\Rate
+ * @package ShipperHQ\WS
  */
 class CustomerGroup
 {

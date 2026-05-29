@@ -15,7 +15,7 @@ use ShipperHQ\WS\Rate\Response\Shipping\Carrier\Shipment;
 
 /**
  * Class RateBreakdown
- * @package ShipperHQ\WS\Rate\Response
+ * @package ShipperHQ\WS
  */
 class RateBreakdown
 {

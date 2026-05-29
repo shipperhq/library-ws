@@ -11,15 +11,14 @@
 
 namespace ShipperHQ\WS\Shipment\Request;
 
-use \ShipperHQ\WS\Shared\Address;
-
-use \ShipperHQ\WS\AbstractWebServiceRequest;
-use \ShipperHQ\WS\WebServiceRequestInterface;
+use ShipperHQ\WS\AbstractWebServiceRequest;
+use ShipperHQ\WS\Shared\Address;
+use ShipperHQ\WS\WebServiceRequestInterface;
 
 /**
  * Class RateRequest
  *
- * @package ShipperHQ\WS\Request\Rate
+ * @package ShipperHQ\WS
  */
 class ShipmentRequest extends AbstractWebServiceRequest implements WebServiceRequestInterface
 {

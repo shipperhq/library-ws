@@ -50,3 +50,7 @@ SHQ23-5319 Add return types and fix copyright and ensure php 8.4 compatibility
 INFRA-1328 - Removed incorrect case-sensitive version of file
 
 
+## 20.10.2 (2026-05-29)
+ENG26-26 Update namespaces and code tidy
+
+

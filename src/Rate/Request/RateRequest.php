@@ -18,7 +18,7 @@ use ShipperHQ\WS\WebServiceRequestInterface;
 /**
  * Class RateRequest
  *
- * @package ShipperHQ\WS\Request\Rate
+ * @package ShipperHQ\WS
  */
 class RateRequest extends AbstractWebServiceRequest implements WebServiceRequestInterface
 {

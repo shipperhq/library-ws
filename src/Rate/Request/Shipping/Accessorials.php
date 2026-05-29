@@ -13,7 +13,7 @@ namespace ShipperHQ\WS\Rate\Request\Shipping;
 /**
  * Class Accessorials
  *
- * @package ShipperHQ\Shipping
+ * @package ShipperHQ\WS
  */
 class Accessorials
 {

@@ -13,7 +13,7 @@ namespace ShipperHQ\WS\Rate\Request\Checkout;
 /**
  * Class StockDetail
  *
- * @package ShipperHQ\Shipping
+ * @package ShipperHQ\WS
  */
 class PhysicalBuildingDetail extends StockDetail
 {

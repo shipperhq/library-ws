@@ -11,14 +11,14 @@
 
 namespace ShipperHQ\WS\PostOrder\Placeorder\Request;
 
-use \ShipperHQ\WS\Shared\BasicAddress;
-use \ShipperHQ\WS\AbstractWebServiceRequest;
-use \ShipperHQ\WS\WebServiceRequestInterface;
+use ShipperHQ\WS\AbstractWebServiceRequest;
+use ShipperHQ\WS\Shared\BasicAddress;
+use ShipperHQ\WS\WebServiceRequestInterface;
 
 /**
  * Class PlaceOrderRequest
  *
- * @package ShipperHQ\WS\PostOrder\Placeorder\Request
+ * @package ShipperHQ\WS
  */
 class PlaceOrderRequest extends AbstractWebServiceRequest implements WebServiceRequestInterface
 {

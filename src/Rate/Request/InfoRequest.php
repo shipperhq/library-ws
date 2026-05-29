@@ -11,13 +11,13 @@
 
 namespace ShipperHQ\WS\Rate\Request;
 
-use \ShipperHQ\WS\AbstractWebServiceRequest;
-use \ShipperHQ\WS\WebServiceRequestInterface;
+use ShipperHQ\WS\AbstractWebServiceRequest;
+use ShipperHQ\WS\WebServiceRequestInterface;
 
 /**
  * Class RateRequest
  *
- * @package ShipperHQ\WS\Request\Rate
+ * @package ShipperHQ\WS
  */
 class InfoRequest extends AbstractWebServiceRequest implements WebServiceRequestInterface
 {

@@ -13,7 +13,7 @@ namespace ShipperHQ\WS\Rate\Request\Checkout;
 /**
  * Class Cart
  *
- * @package ShipperHQ\Checkout
+ * @package ShipperHQ\WS
  */
 class Cart
 {

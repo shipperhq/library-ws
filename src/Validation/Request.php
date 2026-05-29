@@ -11,14 +11,13 @@
 
 namespace ShipperHQ\WS\Validation;
 
-use ShipperHQ\WS\Validation\Address;
-use \ShipperHQ\WS\AbstractWebServiceRequest;
-use \ShipperHQ\WS\WebServiceRequestInterface;
+use ShipperHQ\WS\AbstractWebServiceRequest;
+use ShipperHQ\WS\WebServiceRequestInterface;
 
 /**
  * Class RateRequest
  *
- * @package ShipperHQ\WS\Request\Rate
+ * @package ShipperHQ\WS
  */
 class Request extends AbstractWebServiceRequest implements WebServiceRequestInterface
 {

@@ -13,7 +13,7 @@ namespace ShipperHQ\WS\Shared;
 /**
  * Class Address
  *
- * @package ShipperHQ\Shipping
+ * @package ShipperHQ\WS
  */
 class Address extends BasicAddress
 {

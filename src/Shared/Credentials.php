@@ -13,7 +13,7 @@ namespace ShipperHQ\WS\Shared;
 /**
  * Class Credentials
  *
- * @package ShipperHQ\User
+ * @package ShipperHQ\WS
  */
 class Credentials
 {

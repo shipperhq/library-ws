@@ -11,13 +11,13 @@
 
 namespace ShipperHQ\WS\Registration;
 
-use \ShipperHQ\WS\AbstractWebServiceResponse;
-use \ShipperHQ\WS\WebServiceResponseInterface;
+use ShipperHQ\WS\AbstractWebServiceResponse;
+use ShipperHQ\WS\WebServiceResponseInterface;
 
 /**
  * Class UPSRegistrationResponse
  *
- * @package ShipperHQ\WS\Response\UPS\Registration
+ * @package ShipperHQ\WS
  */
 class UPSRegistrationResponse extends AbstractWebServiceResponse implements WebServiceResponseInterface
 {

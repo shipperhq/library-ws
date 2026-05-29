@@ -14,7 +14,7 @@ namespace ShipperHQ\WS\Rate\Response;
 /**
  * Class WebServiceError
  *
- * @package ShipperHQ\WS\Rate\Response
+ * @package ShipperHQ\WS
  */
 class WebServiceError
 {

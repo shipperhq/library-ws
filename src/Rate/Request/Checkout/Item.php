@@ -14,7 +14,7 @@ namespace ShipperHQ\WS\Rate\Request\Checkout;
 /**
  * Class Item
  *
- * @package ShipperHQ\Checkout
+ * @package ShipperHQ\WS
  */
 class Item
 {

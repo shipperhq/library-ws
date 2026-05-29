@@ -15,7 +15,7 @@ namespace ShipperHQ\WS\Rate\Response;
 
 /**
  * Class ProductInfo
- * @package ShipperHQ\WS\Rate\Response
+ * @package ShipperHQ\WS
  */
 class ProductInfo
 {
