@@ -54,3 +54,7 @@ INFRA-1328 - Removed incorrect case-sensitive version of file
 ENG26-26 Update namespaces and code tidy
 
 
+## 20.10.3 (2026-07-09)
+ENG26-1196 Add support for sending selected timeslot in place order request
+
+

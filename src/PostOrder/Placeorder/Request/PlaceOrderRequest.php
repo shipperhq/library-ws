@@ -30,6 +30,7 @@ class PlaceOrderRequest extends AbstractWebServiceRequest implements WebServiceR
     public $orderDate;
     public $recipient;
     public $cartPrice;
+    public $timeSlot;
 
     /**
      * @param null $orderNumber
@@ -39,7 +40,8 @@ class PlaceOrderRequest extends AbstractWebServiceRequest implements WebServiceR
      * @param null $transId
      * @param null $orderDate
      * @param BasicAddress|null $recipient
-     * @param  null $cartPrice
+     * @param null $cartPrice
+     * @param null|String $timeSlot
      */
     public function __construct(
         $orderNumber = null,
@@ -49,7 +51,8 @@ class PlaceOrderRequest extends AbstractWebServiceRequest implements WebServiceR
         $transId = null,
         $orderDate = null,
         ?BasicAddress $recipient = null,
-        $cartPrice = null
+        $cartPrice = null,
+        $timeSlot = null,
     ) {
         $this->orderNumber = $orderNumber;
         $this->totalCharges = $totalCharges;
@@ -59,6 +62,7 @@ class PlaceOrderRequest extends AbstractWebServiceRequest implements WebServiceR
         $this->orderDate = $orderDate;
         $this->recipient = $recipient;
         $this->cartPrice = $cartPrice;
+        $this->timeSlot = $timeSlot;
     }
 
     /**
@@ -186,5 +190,24 @@ class PlaceOrderRequest extends AbstractWebServiceRequest implements WebServiceR
     public function setCartPrice($cartPrice): void
     {
         $this->cartPrice = $cartPrice;
+    }
+
+    /**
+     * Gets the selected timeslot if set otherwise null
+     *
+     * @return String|null
+     */
+    public function getTimeSlot() {
+        return $this->timeSlot;
+    }
+
+    /**
+     * Set the selected timeslot
+     *
+     * @param $timeslot
+     * @return void
+     */
+    public function setTimeSlot($timeSlot) {
+        $this->timeSlot = $timeSlot;
     }
 }
